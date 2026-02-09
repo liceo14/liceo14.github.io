@@ -74,6 +74,22 @@ body { background-color: #f9f9f9; color: #333; }
 }
 .post-date { display: block; margin-top: 10px; font-size: 0.8rem; color: #777; }
 
+/* Estilo automático para la primera línea/título de cada post */
+.post h3:first-of-type {
+    background-color: rgba(0, 51, 102, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block; /* Asegura que cubra todo el ancho disponible */
+}
+
+/* Clase para resaltar líneas o fondos */
+.highlight-line {
+    background-color: rgba(0, 51, 102, 0.4);
+    padding: 2px 5px; /* Opcional: para que el color no quede pegado al texto */
+    border-radius: 4px; /* Opcional: para suavizar las esquinas */
+}
+
 /* Footer */
 .main-footer { background: #333; color: white; padding: 30px; margin-top: 40px; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
