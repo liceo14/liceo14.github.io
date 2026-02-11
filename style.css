@@ -41,6 +41,13 @@ body { background-color: #f9f9f9; color: #333; }
 .navbar a:hover { transform: scale(1.2); color: #ffcc00; }
 .navbar a.active { border: 2px solid #00d4ff; border-radius: 5px; }
 
+/* Clase para resaltar líneas o fondos */
+.highlight-line {
+    background-color: rgba(0, 51, 102, 0.4);
+    padding: 2px 5px; /* Opcional: para que el color no quede pegado al texto */
+    border-radius: 4px; /* Opcional: para suavizar las esquinas */
+}
+
 /* Dropdown */
 .dropdown-content {
     display: none;
@@ -83,11 +90,10 @@ body { background-color: #f9f9f9; color: #333; }
     display: block; /* Asegura que cubra todo el ancho disponible */
 }
 
-/* Clase para resaltar líneas o fondos */
-.highlight-line {
-    background-color: rgba(0, 51, 102, 0.4);
-    padding: 2px 5px; /* Opcional: para que el color no quede pegado al texto */
-    border-radius: 4px; /* Opcional: para suavizar las esquinas */
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: para que se vea más moderno */
 }
 
 /* Footer */
