@@ -99,3 +99,20 @@ body { background-color: #f9f9f9; color: #333; }
 /* Footer */
 .main-footer { background: #333; color: white; padding: 30px; margin-top: 40px; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+/* Contenedor del Blog */
+.blog-wrapper {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #003366; /* Mantiene el estilo de tus posts actuales */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Ajuste para que el iframe sea fluido */
+iframe {
+    width: 100%;
+    min-height: 800px; /* Puedes ajustar la altura según prefieras */
+    border: none;
+}
