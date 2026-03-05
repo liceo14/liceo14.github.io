@@ -28,7 +28,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Docentes</a>
+                <a href="javascript:void(0)" class="dropbtn" class="active">Docentes</a>
                 <div class="dropdown-content">
                     <a href="aviso_doc.html" target="_blank">Aviso inasistencias docentes</a>
                     <a href="https://forms.gle/dQc5YYZTA6Lu84zt5" target="_blank">Reservas</a>
@@ -49,7 +49,7 @@
                     <a href="#">Materiales</a>
                 </div>
             </li>
-            <li><a href="novedades.html" class="active">Novedades</a></li>
+            <li><a href="novedades.html" >Novedades</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Funcionarios</a>
                 <div class="dropdown-content">
@@ -73,78 +73,49 @@
         </ul>
     </nav>
 
-    <main class="container">
-        <article class="post">
-			<h3>Importante: fallas en laptop Acrab 2025.</h3>
+	<div class="container">
+		<section class="post">
+			<h3>Aviso de inasistencias funcionarios.</h3>
+			<p><strong>Completa el formulario indicando turno y función afectada.</strong></p>
+			
 			<br>
-			<p>Desde Ceibal detectaron fallas en la laptop Acrab 2025 que,<br>
-				en condiciones de uso prolongado o en altas temperaturas,<br>
-				podrían hacer que la batería recaliente y produzca daños permanentes al equipo o incluso quemaduras.</p>
-				<br>
-				<img src="https://documentos.ceibal.edu.uy/portal/2026/01/Portada-comunicado-acrab.png" alt="Equipo Acrab">
-				<a href="https://ceibal.edu.uy/institucional/articulos/fallas-en-acrab-2025/">Leer artículo</a>
-        </article>
+
+			<form action="https://formspree.io/f/mbdzrqyb" method="POST" class="contact-form">
+				
+				<input type="hidden" name="_next" value="https://liceo14.github.io/exito.html">
+				
+				<div class="form-group">
+					<label for="full-name">Nombre Completo:</label>
+					<input type="text" name="Nombre:" id="full-name" placeholder="Ej. Juan Pérez" required>
+				</div>
+
+				<div class="form-group">
+					<label for="cedula">Documento de identidad:</label>
+					<input type="text" name="Cédula:" id="cedula" placeholder="Ej. 12345678" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email-address">Correo Electrónico:</label>
+					<input type="email" name="Responder:" id="email-address" placeholder="aulainfo14@gmail.com" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="date">Fecha inasistencia:</label>
+					<input type="date" name="Fecha:" id="date" placeholder="31/12/1959" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="message">Mensaje (recuerde incluir turno y función):</label>
+					<textarea name="message" id="Mensaje:" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+				</div>
+
+				<input type="hidden" name="_subject" value="Aviso de inasistencia funcionario.">
+
+				<button type="submit" class="btn-comment">Enviar Mensaje</button>
+			</form>
+		</section>
+	</div>
 	
-        <article class="post">
-            <h3>Calendario de exámenes Febrero 2026.</h3>
-			<br>
-            <h3>11/02</h3>
-			<hr>
-			<p>	08:00 Geografía </p>
-            <br>
-			<p>	10:00 Matemática </p>
-            <br>
-			<p>	12:00 Ciencias Físicas </p>
-            <br>
-			<p>	12:00 Química </p>
-            <br>
-			<p>	14:00 Id. Español </p>
-            <br>
-			<p>	16:00 Música </p>
-            <br>
-
-            <h3>12/02</h3>
-			<hr>
-			<p>	08:00 Inglés </p>
-            <br>
-			<p>	10:00 Biología </p>
-            <br>
-			<p>	12:00 Ed. Física </p>
-            <br>
-			<p>	14:00 Ciencias Computacionales (Informática) </p>
-            <br>
-			<p>	16:00 Id. Español </p>
-            <br>
-
-            <h3>13/02</h3>
-			<hr>
-			<p>	08:00 Historia </p>
-            <br>
-			<p>	10:00 Dibujo </p>
-            <br>
-			<p>	12:00 Literatura </p>
-            <br>
-			<p>	14:00 Física </p>
-			<br>
-        </article>
-
-		<div class="blog-wrapper">
-			<iframe 
-				src="https://novedadesliceo14.blogspot.com/" 
-				style="border:0px #ffffff none;" 
-				name="blog-liceo" 
-				scrolling="yes" 
-				frameborder="0" 
-				marginheight="0px" 
-				marginwidth="0px" 
-				height="800px" 
-				width="100%" 
-				allowfullscreen>
-			</iframe>
-		</div>
-
-    </main>
-
 	<footer class="main-footer">
 		<div class="footer-grid">
 			<div class="contact-info">
