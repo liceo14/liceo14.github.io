@@ -52,13 +52,29 @@ body { background-color: #f9f9f9; color: #333; }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #ffffff; /* Un blanco puro para limpiar el fondo */
+    min-width: 180px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden; /* Para que el color de hover respete los bordes redondeados */
 }
-.dropdown-content a { color: #003366; padding: 12px 16px; transform: none !important; }
-.dropdown-content a:hover { background-color: #ddd; }
-.dropdown:hover .dropdown-content { display: block; }
+
+.dropdown-content a { 
+    color: #003366 !important; /* Forzamos el azul oscuro para que sea legible */
+    padding: 12px 16px; 
+    transform: none !important; /* Quitamos el efecto zoom aquí para evitar saltos visuales */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cambio de comportamiento al pasar el ratón (Hover) */
+.dropdown-content a:hover { 
+    background-color: #003366; /* Fondo azul oscuro */
+    color: #ffcc00 !important; /* Texto amarillo vibrante (ahora sí destaca) */
+}
+
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
 
 /* Entradas (Posts) */
 .container { max-width: 900px; margin: 20px auto; padding: 20px; }
