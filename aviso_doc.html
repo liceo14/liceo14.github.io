@@ -90,6 +90,11 @@
 				<label for="cedula">Documento de identidad (8 dígitos):</label>
 				<input type="text" id="cedula" placeholder="Ej. 12345678" pattern="\d{8}" title="Ingrese los 8 dígitos sin puntos ni guiones" required>
 			</div>
+			
+			<div class="form-group">
+				<label for="fecha">Fecha de la inasistencia:</label>
+				<input type="date" id="fecha" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+			</div>
 
 			<div class="form-group">
 				<label for="turno">Turno:</label>
@@ -176,6 +181,7 @@
 		// Captura de valores
 		const nombre = document.getElementById('full-name').value;
 		const cedula = document.getElementById('cedula').value;
+		const fecha = document.getElementById('fecha').value;
 		const turno = document.getElementById('turno').value;
 		const motivo = document.getElementById('motivo').value;
 		const detalles = document.getElementById('message').value;
@@ -192,13 +198,14 @@
 
 		// Configuración del correo
 		const destinatario = "inasistencias14diurno@gmail.com";
-		const asunto = `Aviso Inasistencia: ${nombre} - ${motivo}`;
+		const asunto = `Aviso Inasistencia: ${nombre} - ${fecha} - ${motivo}`;
 		
 		// Cuerpo del mensaje formateado
 		const cuerpo = `AVISO DE INASISTENCIA DOCENTE
 	---------------------------------
 	DOCENTE: ${nombre}
 	CÉDULA: ${cedula}
+	FECHA: ${fecha}
 	TURNO: ${turno}
 	MOTIVO: ${motivo}
 	NIVELES: ${niveles.join(", ")}
