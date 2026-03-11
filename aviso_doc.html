@@ -78,46 +78,70 @@
 	<div class="container">
 		<section class="post">
 			<h3>Aviso de inasistencias docentes.</h3>
-			<p><strong>Completa el formulario indicando turno, nivel y grupos afectados.</strong></p>
-			
 			<br>
+		<form id="inasistenciaForm" class="contact-form">
+			
+			<div class="form-group">
+				<label for="full-name">Nombre Completo:</label>
+				<input type="text" id="full-name" placeholder="Ej. Juan Pérez" required>
+			</div>
 
-			<form action="https://formspree.io/f/xpqyakrj" method="POST" class="contact-form">
-				
-				<input type="hidden" name="_next" value="https://liceo14.github.io/exito.html">
-				
-				<div class="form-group">
-					<label for="full-name">Nombre Completo:</label>
-					<input type="text" name="Nombre:" id="full-name" placeholder="Ej. Juan Pérez" required>
-				</div>
+			<div class="form-group">
+				<label for="cedula">Documento de identidad (8 dígitos):</label>
+				<input type="text" id="cedula" placeholder="Ej. 12345678" pattern="\d{8}" title="Ingrese los 8 dígitos sin puntos ni guiones" required>
+			</div>
 
-				<div class="form-group">
-					<label for="cedula">Documento de identidad:</label>
-					<input type="text" name="Cédula:" id="cedula" placeholder="Ej. 12345678" required>
-				</div>
+			<div class="form-group">
+				<label for="turno">Turno:</label>
+				<select id="turno" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+					<option value="" disabled selected>Seleccione turno...</option>
+					<option value="Matutino">Matutino</option>
+					<option value="Vespertino">Vespertino</option>
+					<option value="Nocturno">Nocturno</option>
+				</select>
+			</div>
 
-				<div class="form-group">
-					<label for="email-address">Correo Electrónico:</label>
-					<input type="email" name="Responder:" id="email-address" placeholder="aulainfo14@gmail.com" required>
-				</div>
-				
-				<div class="form-group">
-					<label for="date">Fecha inasistencia:</label>
-					<input type="date" name="Fecha:" id="date" placeholder="31/12/1959" required>
-				</div>
-				
-				<div class="form-group">
-					<label for="message">Mensaje (recuerde incluir turno, nivel y grupos):</label>
-					<textarea name="message" id="Mensaje:" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-				</div>
+			<div class="form-group">
+				<label for="motivo">Motivo de inasistencia:</label>
+				<select id="motivo" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+					<option value="" disabled selected>Seleccione el motivo...</option>
+					<option value="71 Personales">71 Personales</option>
+					<option value="70.1 Enfermedad">70.1 Enfermedad</option>
+					<option value="70.2 Maternidad">70.2 Maternidad</option>
+					<option value="70.3 Lactancia">70.3 Lactancia</option>
+					<option value="70.4 Duelo">70.4 Duelo</option>
+					<option value="70.5 Matrimonio">70.5 Matrimonio</option>
+					<option value="70.6 Paternidad">70.6 Paternidad</option>
+					<option value="70.7 Donación de sangre">70.7 Donación de sangre</option>
+					<option value="70.11 Concursos, exámenes">70.11 Concursos, exámenes</option>
+					<option value="70.12 Reuniones">70.12 Reuniones</option>
+					<option value="70.13 Motivos especiales">70.13 Motivos especiales</option>
+					<option value="Otros">Sin determinar</option>
+				</select>
+			</div>
 
-				<input type="hidden" name="_subject" value="Aviso de inasistencia docente.">
+			<div class="form-group">
+				<label>Niveles afectados:</label>
+				<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; background: #f9f9f9; padding: 10px; border-radius: 5px;">-->
+					<label><input type="checkbox" name="nivel" value="7mo"> 7mo</label>
+					<label><input type="checkbox" name="nivel" value="8vo"> 8vo</label>
+					<label><input type="checkbox" name="nivel" value="9no"> 9no</label>
+					<label><input type="checkbox" name="nivel" value="1ems"> 1er EMS</label>
+					<label><input type="checkbox" name="nivel" value="EE"> EE (Extra edad)</label>
+					<label><input type="checkbox" name="nivel" value="Coord"> Coordinación</label>
+				<!--</div>-->
+			</div>
 
-				<button type="submit" class="btn-comment">Enviar Mensaje</button>
-			</form>
+			<div class="form-group">
+				<label for="message">Grupos y detalles adicionales:</label>
+				<textarea id="message" rows="3" placeholder="Ej: 7mo 1, 8vo 3..." ></textarea>
+			</div>
+
+			<button type="submit" class="btn-comment">Generar Correo de Aviso</button>
+		</form>
 		</section>
 	</div>
-	
+
 	<footer class="main-footer">
 		<div class="footer-grid">
 			<div class="contact-info">
@@ -144,3 +168,48 @@
 
 </body>
 </html>
+
+	<script>
+	document.getElementById('inasistenciaForm').addEventListener('submit', function(e) {
+		e.preventDefault();
+
+		// Captura de valores
+		const nombre = document.getElementById('full-name').value;
+		const cedula = document.getElementById('cedula').value;
+		const turno = document.getElementById('turno').value;
+		const motivo = document.getElementById('motivo').value;
+		const detalles = document.getElementById('message').value;
+
+		// Captura de checkboxes
+		const checkboxes = document.querySelectorAll('input[name="nivel"]:checked');
+		let niveles = [];
+		checkboxes.forEach((cb) => niveles.push(cb.value));
+		
+		if (niveles.length === 0) {
+			alert("Por favor, seleccione al menos un nivel afectado.");
+			return;
+		}
+
+		// Configuración del correo
+		const destinatario = "inasistencias14diurno@gmail.com";
+		const asunto = `Aviso Inasistencia: ${nombre} - ${motivo}`;
+		
+		// Cuerpo del mensaje formateado
+		const cuerpo = `AVISO DE INASISTENCIA DOCENTE
+	---------------------------------
+	DOCENTE: ${nombre}
+	CÉDULA: ${cedula}
+	TURNO: ${turno}
+	MOTIVO: ${motivo}
+	NIVELES: ${niveles.join(", ")}
+
+	DETALLES/GRUPOS:
+	${detalles}
+	---------------------------------
+	Enviado desde el portal web del Liceo 14.`;
+
+		// Abrir el cliente de correo
+		const mailtoUrl = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+		window.location.href = mailtoUrl;
+	});
+	</script>
