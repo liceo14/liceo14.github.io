@@ -79,48 +79,18 @@
 
     <main class="container">
         <article class="post">
-            <h3>Equipo de Dirección</h3>
-            <ul>
-                <li><strong>Dirección:</strong> Miguel Varona</li>
-                <li><strong>Subdirección Diurno:</strong> María Ottati</li>
-                <li><strong>Suplente Dirección:</strong> Valeria Albanese</li>
-            </ul>
-        </article>
+            <h3>Ceibal</h3>
+			<a href="https://beneficio.ceibal.edu.uy/consulta" class="btn-comment">Consultar beneficio equipo Ceibal</a>
+			<br>
+			<a href="https://machform.ceibal.edu.uy/atencion-al-usuario/view.php?id=102964" class="btn-comment">Enviar denuncia policial</a>
+			<br>
+		</article>
 
-        <article class="post">
-            <h3>Secretaría y Administración</h3>
-			<ul>
-				<li><strong>Secretaría:</strong> Sandra de León</li>
-				<li><strong>Suplente Secretaría:</strong> Carolina Ocampo</li>
-				<li><strong>Administración:</strong> Soledad Ocampo, Agustina Posse</li>
-			</ul>
-        </article>
-
-        <article class="post">
-            <h3>Adscripción</h3>
-			<ul>
-				<li><strong>Turno Matutino:</strong> Isabel Ferraz, Mónica Luchi, Roberto Tapia, Rosa Grazziani</li>
-				<li><strong>Turno Vespertino:</strong> Nathalia Moratorio, Natalia Pasina, Ignacio Verrastro</li>
-			</ul>
-        </article>
-
-        <article class="post">
-            <h3>Apoyo a la Enseñanza</h3>
-            <ul>
-                <li><strong>POB (Biblioteca):</strong> Mara Pereira, Marcos Medina</li>
-                <li><strong>POP (Orientador Pedagógico):</strong> Carina Toja, Nadia Ferrari</li>
-                <li><strong>POITE (Informática):</strong> Roberto Martínez (matutino), Sebastian Cortazzo (vespertino)</li>
-				<li><strong>Ref. Sexualidad:</strong> Elvira Zenande</li>
-			</ul>
-        </article>
-
-        <article class="post">
-            <h3>Preparadores de Laboratorio</h3>
-			<ul>
-                <li><strong>Astronomía:</strong> Héctor Roldos</li>
-				<li><strong>Biología:</strong> Marcelo Garrido</li>
-				<li><strong>Física:</strong> Alejandro Vázquez</li>
-            </ul>
+		<article class="post">
+			<h3>POITE</h3>
+			<a href="javascript:void(0)" onclick="verificarPin('https://forms.gle/N8PMVRt77GoXaz8F6')" class="btn-comment">
+            Registro diario</a>
+			<br>
         </article>
     </main>
 
@@ -150,3 +120,18 @@
 
 </body>
 </html>
+
+<script>
+function verificarPin(url) {
+    const PIN_CORRECTO = "3390"; // Cambia aquí el pin de 4 dígitos
+    let intento = prompt("Ingrese el PIN para continuar:");
+
+    if (intento === PIN_CORRECTO) {
+        window.open(url, '_blank');
+    } else if (intento === null) {
+        // El usuario canceló el prompt, no hacemos nada
+    } else {
+        alert("PIN incorrecto. Acceso denegado.");
+    }
+}
+</script>
