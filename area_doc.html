@@ -79,49 +79,15 @@
     </nav>
 
     <main class="container">
-        <article class="post">
-            <h3>Equipo de Dirección</h3>
-            <ul>
-                <li><strong>Dirección:</strong> Miguel Varona</li>
-                <li><strong>Subdirección Diurno:</strong> María Ottati</li>
-                <li><strong>Suplente Dirección:</strong> Valeria Albanese</li>
-            </ul>
-        </article>
-
-        <article class="post">
-            <h3>Secretaría y Administración</h3>
-			<ul>
-				<li><strong>Secretaría:</strong> Sandra de León</li>
-				<li><strong>Suplente Secretaría:</strong> Carolina Ocampo</li>
-				<li><strong>Administración:</strong> Soledad Ocampo, Agustina Posse</li>
-			</ul>
-        </article>
-
-        <article class="post">
-            <h3>Adscripción</h3>
-			<ul>
-				<li><strong>Turno Matutino:</strong> Isabel Ferraz, Mónica Luchi, Roberto Tapia, Rosa Grazziani</li>
-				<li><strong>Turno Vespertino:</strong> Nathalia Moratorio, Natalia Pasina, Ignacio Verrastro</li>
-			</ul>
-        </article>
-
-        <article class="post">
-            <h3>Apoyo a la Enseñanza</h3>
-            <ul>
-                <li><strong>POB (Biblioteca):</strong> Mara Pereira, Marcos Medina</li>
-                <li><strong>POP (Orientador Pedagógico):</strong> Carina Toja, Nadia Ferrari</li>
-                <li><strong>POITE (Informática):</strong> Roberto Martínez (matutino), Sebastian Cortazzo (vespertino)</li>
-				<li><strong>Ref. Sexualidad:</strong> Elvira Zenande</li>
-			</ul>
-        </article>
-
-        <article class="post">
-            <h3>Preparadores de Laboratorio</h3>
-			<ul>
-                <li><strong>Astronomía:</strong> Héctor Roldos</li>
-				<li><strong>Biología:</strong> Marcelo Garrido</li>
-				<li><strong>Física:</strong> Alejandro Vázquez</li>
-            </ul>
+		<article class="post">
+			<h3>Área Docentes</h3>
+			<br>
+			<h4>Planos de clase</h4>
+			<br>
+			<a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/13HQwuBCu5SDY6Kt995FD3dTTQG_YmAcOxtWbree2XbI/edit?usp=drive_link')" class="btn-comment">Matutino</a>
+			<br>
+			<a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/18vtKLhaNXRZECcr4bcB3REQeHBU0UNlfJLZUewhoYGQ/edit?usp=drive_link')" class="btn-comment">Vespertino</a>
+			<br>
         </article>
     </main>
 
@@ -151,3 +117,18 @@
 
 </body>
 </html>
+
+<script>
+function verificarPin(url) {
+    const PIN_CORRECTO = "1963"; // Cambia aquí el pin de 4 dígitos
+    let intento = prompt("Ingrese el PIN para continuar:");
+
+    if (intento === PIN_CORRECTO) {
+        window.open(url, '_blank');
+    } else if (intento === null) {
+        // El usuario canceló el prompt, no hacemos nada
+    } else {
+        alert("PIN incorrecto. Acceso denegado.");
+    }
+}
+</script>
