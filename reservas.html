@@ -80,23 +80,31 @@
 
 	<div class="container">
 		<section class="post">
-			<h3>Aviso de inasistencias docentes.</h3>
+			<h3>Reserva de espacios/recursos.</h3>
 			<br>
-			<h4>Recuerde que deberá completar la fórmula 82 correspondiente.<h4>
-		<form id="inasistenciaForm" class="contact-form">
+			<a href="https://docs.google.com/spreadsheets/d/1LUVWRVHHPf_7A_T2Ypx-8fc7ujI9McIkcy73uBdPuQY/edit?gid=868043487#gid=868043487">Recuerde verificar disponibilidad aquí.</a>
+			<br>
+			<br>
+			<p>Las reservas requieren confirmación para hacerse efectivas </p>
+			<br>
+			<p>Complete este formulario con 48 horas de anticipación con la finalidad de organizar requerimientos y horarios.</p>
+			<br>			
+		
+		<form id="reservaForm" class="contact-form">
 			
 			<div class="form-group">
 				<label for="full-name">Nombre Completo:</label>
 				<input type="text" id="full-name" placeholder="Ej. Juan Pérez" required>
 			</div>
-
-			<div class="form-group">
-				<label for="cedula">Documento de identidad (8 dígitos):</label>
-				<input type="text" id="cedula" placeholder="Ej. 12345678" pattern="\d{8}" title="Ingrese los 8 dígitos sin puntos ni guiones" required>
-			</div>
 			
 			<div class="form-group">
-				<label for="fecha">Fecha de la inasistencia:</label>
+				<label for="materia">Asignatura/Rol:</label>
+				<input type="text" id="materia" placeholder="Ej. POP/POB/Historia" required>
+			</div>
+			
+
+			<div class="form-group">
+				<label for="fecha">Fecha de la Reserva:</label>
 				<input type="date" id="fecha" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
 			</div>
 
@@ -111,34 +119,62 @@
 			</div>
 
 			<div class="form-group">
-				<label for="motivo">Motivo de inasistencia:</label>
-				<select id="motivo" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-					<option value="" disabled selected>Seleccione el motivo...</option>
-					<option value="71 Personales">71 Personales</option>
-					<option value="70.1 Enfermedad">70.1 Enfermedad</option>
-					<option value="70.2 Maternidad">70.2 Maternidad</option>
-					<option value="70.3 Lactancia">70.3 Lactancia</option>
-					<option value="70.4 Duelo">70.4 Duelo</option>
-					<option value="70.5 Matrimonio">70.5 Matrimonio</option>
-					<option value="70.6 Paternidad">70.6 Paternidad</option>
-					<option value="70.7 Donación de sangre">70.7 Donación de sangre</option>
-					<option value="70.11 Concursos, exámenes">70.11 Concursos, exámenes</option>
-					<option value="70.12 Reuniones">70.12 Reuniones</option>
-					<option value="70.13 Motivos especiales">70.13 Motivos especiales</option>
-					<option value="Otros">Sin determinar</option>
+				<label for="hr_inicio">Hora de inicio:</label>
+				<select id="hr_inicio" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+					<option value="" disabled selected>Seleccione la hora de inicio:</option>
+					<option value="7:20">7:20</option>
+					<option value="8:10">8:10</option>
+					<option value="8:50">8:50</option>
+					<option value="9:35">9:35</option>
+					<option value="10:25">10:25</option>
+					<option value="11:15">11:15</option>
+					<option value="11:55">11:55</option>
+					<option value="12:40">12:40</option>
+					<option value="13:45">13:45</option>
+					<option value="14:35">14:35</option>
+					<option value="15:15">15:15</option>
+					<option value="16:00">16:00</option>
+					<option value="16:50">16:50</option>
+					<option value="17:40">17:40</option>
+					<option value="18:20">18:20</option>
 				</select>
 			</div>
 
 			<div class="form-group">
-				<label>Niveles afectados:</label>
-				<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; background: #f9f9f9; padding: 10px; border-radius: 5px;">-->
-					<label><input type="checkbox" name="nivel" value="7mo"> 7mo</label>
-					<label><input type="checkbox" name="nivel" value="8vo"> 8vo</label>
-					<label><input type="checkbox" name="nivel" value="9no"> 9no</label>
-					<label><input type="checkbox" name="nivel" value="1ems"> 1er EMS</label>
-					<label><input type="checkbox" name="nivel" value="EE"> EE (Extra edad)</label>
-					<label><input type="checkbox" name="nivel" value="Coord"> Coordinación</label>
-				<!--</div>-->
+				<label for="hr_fin">Hora de finalización:</label>
+				<select id="hr_fin" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+					<option value="" disabled selected>Seleccione la hora de finalización:</option>
+					<option value="8:10">8:10</option>
+					<option value="8:50">8:50</option>
+					<option value="9:35">9:35</option>
+					<option value="10:25">10:25</option>
+					<option value="11:15">11:15</option>
+					<option value="11:55">11:55</option>
+					<option value="12:40">12:40</option>
+					<option value="13:45">13:45</option>
+					<option value="14:35">14:35</option>
+					<option value="15:15">15:15</option>
+					<option value="16:00">16:00</option>
+					<option value="16:50">16:50</option>
+					<option value="17:40">17:40</option>
+					<option value="18:20">18:20</option>
+					<option value="19:00">19:00</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="espacio">Espacio/Recurso:</label>
+				<select id="espacio" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+					<option value="" disabled selected>Seleccione espacio/recurso...</option>
+					<option value="Lab. Informática">Laboratorio de informática</option>
+					<option value="Biblioteca">Biblioteca</option>
+					<option value="Proyector">Proyector</option>
+					<option value="Lab. Bio./Quím.">Laboratorio de Biología/Química</option>
+					<option value="Lab. Física">Laboratorio de Física</option>
+					<option value="Aula 1">Aula 1 (conferencias)</option>
+					<option value="Aula 4">Aula 4 (casona)</option>
+					<option value="TV móvil">TV móvil (se retira en dirección)</option>
+				</select>
 			</div>
 
 			<div class="form-group">
@@ -146,7 +182,7 @@
 				<textarea id="message" rows="3" placeholder="Ej: 7mo 1, 8vo 3..." ></textarea>
 			</div>
 
-			<button type="submit" class="btn-comment">Generar Correo de Aviso</button>
+			<button type="submit" class="btn-comment">Generar Correo de Reserva</button>
 		</form>
 		</section>
 	</div>
@@ -176,63 +212,55 @@
 	</footer>
 
 	<script>
-		document.getElementById('inasistenciaForm').addEventListener('submit', function(e) {
-		e.preventDefault();
+		document.getElementById('reservaForm').addEventListener('submit', function(e) {
+			e.preventDefault();
 
-		// 1. Captura de valores
-		const nombre = document.getElementById('full-name').value;
-		const cedula = document.getElementById('cedula').value;
-		const fecha = document.getElementById('fecha').value;
-		const turno = document.getElementById('turno').value;
-		const motivo = document.getElementById('motivo').value;
-		const detalles = document.getElementById('message').value;
+			// 1. Captura de valores
+			const nombre = document.getElementById('full-name').value;
+			const materia = document.getElementById('materia').value;
+			const fecha = document.getElementById('fecha').value;
+			const turno = document.getElementById('turno').value;
+			const espacio = document.getElementById('espacio').value;
+			const hr_inicio = document.getElementById('hr_inicio').value;
+			const hr_fin = document.getElementById('hr_fin').value;
+			const detalles = document.getElementById('message').value;
 
-		// 2. Captura de checkboxes
-		const checkboxes = document.querySelectorAll('input[name="nivel"]:checked');
-		let niveles = [];
-		checkboxes.forEach((cb) => niveles.push(cb.value));
-		
-		if (niveles.length === 0) {
-			alert("Por favor, seleccione al menos un nivel afectado.");
-			return;
-		}
+			// 2. Validación de horarios (Minutos totales)
+			const transformarAMinutos = (horaTexto) => {
+				const [horas, minutos] = horaTexto.split(':').map(Number);
+				return horas * 60 + minutos;
+			};
 
-		// 3. Preparación del correo
-		const destinatario = "inasistencias14diurno@gmail.com";
-		const asunto = `Aviso Inasistencia: ${nombre} - ${fecha} - ${motivo}`;
-		
-		// Cuerpo del mensaje formateado
-		const cuerpo = `AVISO DE INASISTENCIA DOCENTE
-	---------------------------------
-	DOCENTE: ${nombre}
-	CÉDULA: ${cedula}
-	FECHA: ${fecha}
-	TURNO: ${turno}
-	MOTIVO: ${motivo}
-	NIVELES: ${niveles.join(", ")}
+			if (transformarAMinutos(hr_fin) <= transformarAMinutos(hr_inicio)) {
+				alert("⚠️ Error: La hora de finalización debe ser posterior a la hora de inicio.");
+				return;
+			}
 
-	DETALLES/GRUPOS:
-	${detalles}
-	---------------------------------
-	Enviado desde el portal web del Liceo 14.`;
+			// 3. Preparación del correo
+			const destinatario = "aulainfo14@gmail.com";
+			const asunto = `Reserva: ${nombre} - ${fecha} - ${turno} - ${hr_inicio} - ${hr_fin} - ${espacio}`;
+			const cuerpo = `RESERVA DE ESPACIO / RECURSO\n---------------------------------\nDOCENTE: ${nombre}\nASIGNATURA: ${materia}\nFECHA: ${fecha}\nTURNO: ${turno}\nHORARIO: ${hr_inicio} - ${hr_fin}\nESPACIO: ${espacio}\nDETALLES / GRUPOS:\n${detalles}\n---------------------------------\nEnviado desde el portal web del Liceo 14.`;
 
-		const mailtoUrl = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-		
-		// 3. "Abrir en nueva pestaña" y aviso de envío
-		const nuevaVentana = window.open(mailtoUrl, '_blank');
-		if (nuevaVentana) {
-			// Intentamos cerrar la pestaña nueva después de medio segundo
-			// Nota: Muchos navegadores bloquean el .close() por seguridad si no hay contenido real
-			setTimeout(() => nuevaVentana.close(), 500);
-		}
+			const mailtoUrl = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
 
-		// 4. Mensaje de éxito en TU página
-		alert("✅ Su aviso de inasistencia ha sido generado.\n\nPor favor, verifique que su aplicación de correo se haya abierto para completar el envío.");
+			// 4. "Abrir en nueva pestaña" y aviso de envío
+			// Abrimos el enlace en una pestaña que se cerrará casi instantáneamente o quedará en segundo plano
+			const nuevaVentana = window.open(mailtoUrl, '_blank');
+			
+			if (nuevaVentana) {
+				// Intentamos cerrar la pestaña nueva después de medio segundo
+				// Nota: Muchos navegadores bloquean el .close() por seguridad si no hay contenido real
+				setTimeout(() => nuevaVentana.close(), 500);
+			}
 
-		// 5. Limpiar el formulario
-		document.getElementById('inasistenciaForm').reset();
-	});
+			// 5. Mensaje de éxito en TU página
+			alert("✅ Su solicitud de reserva ha sido generada.\n\nPor favor, verifique que su aplicación de correo se haya abierto para completar el envío.");
+			
+			// 6. Limpiar el formulario
+			document.getElementById('reservaForm').reset();
+		});
 	</script>
-
 </body>
 </html>
+
+

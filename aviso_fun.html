@@ -28,12 +28,12 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn" class="active">Docentes</a>
+                <a href="javascript:void(0)" class="dropbtn active">Docentes</a>
                 <div class="dropdown-content">
 					<a href="area_doc.html" target="_blank">Área restringida</a>
                     <a href="aviso_doc.html" target="_blank">Aviso inasistencias docentes</a>
 					<a href="https://lu.anep.edu.uy/cas-anep/login?service=https://portafoliodocente.anep.edu.uy/shiro-cas" >Portafolio</a>
-                    <a href="https://forms.gle/dQc5YYZTA6Lu84zt5" target="_blank">Reservas</a>
+                    <a href="reservas.html" target="_blank">Reservas</a>
                     <a href="https://docs.google.com/spreadsheets/d/1w2P5Ts8u9VVlohEptgasmKvE4vBGLeuDK8myFJKyRG4/edit?usp=sharing" target="_blank">Ver reservas</a>
                 </div>
             </li>
@@ -162,15 +162,12 @@
 			</div>
 		</div>
 	</footer>
-
-</body>
-</html>
-
+	
 	<script>
-	document.getElementById('inasistenciaForm').addEventListener('submit', function(e) {
+		document.getElementById('inasistenciaForm').addEventListener('submit', function(e) {
 		e.preventDefault();
 
-		// Captura de valores
+		// 1. Captura de valores
 		const nombre = document.getElementById('full-name').value;
 		const cedula = document.getElementById('cedula').value;
 		const fecha = document.getElementById('fecha').value;
@@ -178,14 +175,14 @@
 		const motivo = document.getElementById('motivo').value;
 		const detalles = document.getElementById('message').value;
 
-		// Configuración del correo
+		// 2. Preparación del correo
 		const destinatario = "inasistenciasfuncionarios14@gmail.com";
 		const asunto = `Aviso Inasistencia: ${nombre} - ${fecha} - ${motivo}`;
 		
 		// Cuerpo del mensaje formateado
 		const cuerpo = `AVISO DE INASISTENCIA FUNCIONARIO
 	---------------------------------
-	DOCENTE: ${nombre}
+	FUNCIONARIO: ${nombre}
 	CÉDULA: ${cedula}
 	FECHA: ${fecha}
 	TURNO: ${turno}
@@ -196,8 +193,22 @@
 	---------------------------------
 	Enviado desde el portal web del Liceo 14.`;
 
-		// Abrir el cliente de correo
 		const mailtoUrl = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-		window.location.href = mailtoUrl;
+		
+		// 3. "Abrir en nueva pestaña" y aviso de envío
+		const nuevaVentana = window.open(mailtoUrl, '_blank');
+		if (nuevaVentana) {
+			// Intentamos cerrar la pestaña nueva después de medio segundo
+			// Nota: Muchos navegadores bloquean el .close() por seguridad si no hay contenido real
+			setTimeout(() => nuevaVentana.close(), 500);
+		}
+		
+		// 4. Mensaje de éxito en TU página
+		alert("✅ Su aviso de inasistencia ha sido generado.\n\nPor favor, verifique que su aplicación de correo se haya abierto para completar el envío.");
+
+		// 5. Limpiar el formulario
+		document.getElementById('inasistenciaForm').reset();	
 	});
 	</script>
+</body>
+</html>
