@@ -34,7 +34,7 @@
                     <a href="aviso_doc.html" target="_blank">Aviso inasistencias docentes</a>
 					<a href="https://lu.anep.edu.uy/cas-anep/login?service=https://portafoliodocente.anep.edu.uy/shiro-cas" >Portafolio</a>
                     <a href="reservas.html" target="_blank">Reservas</a>
-                    <a href="https://docs.google.com/spreadsheets/d/1w2P5Ts8u9VVlohEptgasmKvE4vBGLeuDK8myFJKyRG4/edit?usp=sharing" target="_blank">Ver reservas</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1qaT2C_74vArTScRWu9yaT72FRWDINwXcM-_-Jvhi0JM/edit?usp=sharing" target="_blank">Ver reservas</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -101,7 +101,6 @@
 				<label for="materia">Asignatura/Rol:</label>
 				<input type="text" id="materia" placeholder="Ej. POP/POB/Historia" required>
 			</div>
-			
 
 			<div class="form-group">
 				<label for="fecha">Fecha de la Reserva:</label>
@@ -176,13 +175,18 @@
 					<option value="TV móvil">TV móvil (se retira en dirección)</option>
 				</select>
 			</div>
+			
+			<div class="form-group">
+				<label for="correo">Correo electrónico:</label>
+				<input type="text" id="correo" placeholder="Ej. usuario@gmail.com" required>
+			</div>
 
 			<div class="form-group">
 				<label for="message">Grupos y detalles adicionales:</label>
 				<textarea id="message" rows="3" placeholder="Ej: 7mo 1, 8vo 3..." ></textarea>
 			</div>
 
-			<button type="submit" class="btn-comment">Generar Correo de Reserva</button>
+			<button type="submit" class="btn-comment">Registrar Reserva</button>
 		</form>
 		</section>
 	</div>
@@ -215,49 +219,35 @@
 		document.getElementById('reservaForm').addEventListener('submit', function(e) {
 			e.preventDefault();
 
-			// 1. Captura de valores
-			const nombre = document.getElementById('full-name').value;
-			const materia = document.getElementById('materia').value;
-			const fecha = document.getElementById('fecha').value;
-			const turno = document.getElementById('turno').value;
-			const espacio = document.getElementById('espacio').value;
-			const hr_inicio = document.getElementById('hr_inicio').value;
-			const hr_fin = document.getElementById('hr_fin').value;
-			const detalles = document.getElementById('message').value;
+			const formData = new FormData();
+			formData.append('nombre', document.getElementById('full-name').value);
+			formData.append('materia', document.getElementById('materia').value);
+			formData.append('fecha', document.getElementById('fecha').value);
+			formData.append('turno', document.getElementById('turno').value);
+			formData.append('hr_inicio', document.getElementById('hr_inicio').value);
+			formData.append('hr_fin', document.getElementById('hr_fin').value);
+			formData.append('espacio', document.getElementById('espacio').value);
+			formData.append('detalles', document.getElementById('message').value);
+			formData.append('correo', document.getElementById('correo').value);
 
-			// 2. Validación de horarios (Minutos totales)
-			const transformarAMinutos = (horaTexto) => {
-				const [horas, minutos] = horaTexto.split(':').map(Number);
-				return horas * 60 + minutos;
-			};
+			// Reemplaza con la URL que copiaste en el Paso 2
+			const URL_SCRIPT = "https://script.google.com/macros/s/AKfycbxqfar6N0jU9Ir0fAWZt602eV91J948XFqizL4BBeVJ3-yV1gIOIQn5QB_NoR1_xFns/exec";
 
-			if (transformarAMinutos(hr_fin) <= transformarAMinutos(hr_inicio)) {
-				alert("⚠️ Error: La hora de finalización debe ser posterior a la hora de inicio.");
-				return;
-			}
-
-			// 3. Preparación del correo
-			const destinatario = "aulainfo14@gmail.com";
-			const asunto = `Reserva: ${nombre} - ${fecha} - ${turno} - ${hr_inicio} - ${hr_fin} - ${espacio}`;
-			const cuerpo = `RESERVA DE ESPACIO / RECURSO\n---------------------------------\nDOCENTE: ${nombre}\nASIGNATURA: ${materia}\nFECHA: ${fecha}\nTURNO: ${turno}\nHORARIO: ${hr_inicio} - ${hr_fin}\nESPACIO: ${espacio}\nDETALLES / GRUPOS:\n${detalles}\n---------------------------------\nEnviado desde el portal web del Liceo 14.`;
-
-			const mailtoUrl = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-
-			// 4. "Abrir en nueva pestaña" y aviso de envío
-			// Abrimos el enlace en una pestaña que se cerrará casi instantáneamente o quedará en segundo plano
-			const nuevaVentana = window.open(mailtoUrl, '_blank');
-			
-			if (nuevaVentana) {
-				// Intentamos cerrar la pestaña nueva después de medio segundo
-				// Nota: Muchos navegadores bloquean el .close() por seguridad si no hay contenido real
-				setTimeout(() => nuevaVentana.close(), 500);
-			}
-
-			// 5. Mensaje de éxito en TU página
-			alert("✅ Su solicitud de reserva ha sido generada.\n\nPor favor, verifique que su aplicación de correo se haya abierto para completar el envío.");
-			
-			// 6. Limpiar el formulario
-			document.getElementById('reservaForm').reset();
+			fetch(URL_SCRIPT, {
+					method: 'POST',
+					mode: 'no-cors', // <--- ESTO ES LA CLAVE
+					body: formData
+				})
+				.then(() => {
+					// Con 'no-cors' no podemos leer la respuesta de Google, 
+					// pero si llega aquí es porque se envió.
+					alert("✅ Solicitud enviada correctamente a la planilla y calendario.");
+					document.getElementById('reservaForm').reset();
+				})
+				.catch(err => {
+					console.error(err);
+					alert("❌ Error de conexión. Verifica tu internet o la URL del script.");
+				});
 		});
 	</script>
 </body>
