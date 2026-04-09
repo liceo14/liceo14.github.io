@@ -17,9 +17,9 @@
         </div>
     </header>
 
-    <nav class="navbar">
+        <nav class="navbar">
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Horarios</a>
                 <div class="dropdown-content">
@@ -39,7 +39,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Espacios</a>
+                <a href="javascript:void(0)" class="dropbtn active">Espacios</a>
                 <div class="dropdown-content">
 					<a href="area_ads.html" target="_blank">Adscripción</a>
 					<a href="biblioteca.html" target="_blank">Biblioteca</a>
@@ -60,7 +60,7 @@
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Recursos</a>
                 <div class="dropdown-content">
-                    <a href="https://www.inumet.gub.uy/alerta">Alerta Meteorológica</a>
+					<a href="https://www.inumet.gub.uy/alerta">Alerta Meteorológica</a>
 					<a href="https://www.dges.edu.uy/propuesta-educativa/programas-de-asignatura">Planes y programas</a>
                     <a href="#">Normativa</a>
                     <a href="https://sites.google.com/view/liceo14nocturno/">Liceo Nocturno</a>
@@ -73,10 +73,43 @@
         </ul>
     </nav>
 
-	<div class="container">
-		<iframe src="https://docs.google.com/spreadsheets/d/1Y3Km0GQZYh4t_q2uiJwmLUl6uVq6EBVwjs83Izysqoc/edit?usp=sharing"></iframe>
-	</div>
-	
+    <main class="container">
+        <article class="post">
+            <h3>Adscripción Turno Matutino</h3>
+			<ul>
+				<li>Isabel Ferraz</li>
+				<li>Mónica Luchi</li>
+				<li>Roberto Tapia</li>
+				<li>Rosa Grazziani</li>
+			</ul>
+			<img src="https://lh3.googleusercontent.com/d/1b-gz7lJiiNooSOgHfFXCIK9V84_wopGO"
+				alt="Turno Matutino"
+				style="max-width: 50%; height: auto;">
+			<br>
+		</article>
+
+        <article class="post">
+            <h3>Adscripción Turno Vespertino</h3>
+			<ul>
+				<li>Nathalia Moratorio</li>
+				<li>Natalia Pasina</li>
+				<li>Ignacio Verrastro</li>
+			</ul>
+			<img src="https://lh3.googleusercontent.com/d/1V0YNJhm5K2e-EVGrc5Es88LjNZmtmG91"
+				alt="Turno Vespertino"
+				style="max-width: 50%; height: auto;">
+		</article>
+
+		<article class="post">
+			<h3>Herramientas</h3>
+			<a href="https://beneficio.ceibal.edu.uy/consulta" class="btn-comment">Consultar beneficio equipo Ceibal</a>
+			<br>
+			<a href="https://servicios.ces.edu.uy/node/pases/form/paso1" class="btn-comment">Destino de estudiantes</a>
+			<br>
+        </article>
+		<a href="mailto:liceo14.adsc@gmail.com?subject=Comentario desde Web" class="btn-comment">Enviar mensaje</a>
+    </main>
+
 	<footer class="main-footer">
 		<div class="footer-grid">
 			<div class="contact-info">
@@ -100,6 +133,21 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+	function verificarPin(url) {
+		const PIN_CORRECTO = "3390"; // Cambia aquí el pin de 4 dígitos
+		let intento = prompt("Ingrese el PIN para continuar:");
+
+		if (intento === PIN_CORRECTO) {
+			window.open(url, '_blank');
+		} else if (intento === null) {
+			// El usuario canceló el prompt, no hacemos nada
+		} else {
+			alert("PIN incorrecto. Acceso denegado.");
+		}
+	}
+	</script>
 
 </body>
 </html>

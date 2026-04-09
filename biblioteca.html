@@ -17,9 +17,9 @@
         </div>
     </header>
 
-    <nav class="navbar">
+        <nav class="navbar">
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Horarios</a>
                 <div class="dropdown-content">
@@ -39,7 +39,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Espacios</a>
+                <a href="javascript:void(0)" class="dropbtn active">Espacios</a>
                 <div class="dropdown-content">
 					<a href="area_ads.html" target="_blank">Adscripción</a>
 					<a href="biblioteca.html" target="_blank">Biblioteca</a>
@@ -60,7 +60,7 @@
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Recursos</a>
                 <div class="dropdown-content">
-                    <a href="https://www.inumet.gub.uy/alerta">Alerta Meteorológica</a>
+					<a href="https://www.inumet.gub.uy/alerta">Alerta Meteorológica</a>
 					<a href="https://www.dges.edu.uy/propuesta-educativa/programas-de-asignatura">Planes y programas</a>
                     <a href="#">Normativa</a>
                     <a href="https://sites.google.com/view/liceo14nocturno/">Liceo Nocturno</a>
@@ -73,10 +73,16 @@
         </ul>
     </nav>
 
-	<div class="container">
-		<iframe src="https://docs.google.com/spreadsheets/d/1Y3Km0GQZYh4t_q2uiJwmLUl6uVq6EBVwjs83Izysqoc/edit?usp=sharing"></iframe>
-	</div>
-	
+    <main class="container">
+        <article class="post">
+            <h3>Biblioteca</h3>
+			<a href="https://drive.google.com/file/d/1E906r9VhVHCEWhx1YGbAuqDip4P4w6AE/view?usp=sharing" target="_blank" class="btn-comment">Bibliografía</a>
+            <br>
+			<a href="https://docs.google.com/document/d/1A3kStN8Iyj8pSVZGfAQWcMKw-mUMrOIwlODs3sdQhPc/edit?usp=sharing" target="_blank" class="btn-comment">Planes Analíticos</a>
+			<br>
+		</article>
+    </main>
+
 	<footer class="main-footer">
 		<div class="footer-grid">
 			<div class="contact-info">
@@ -100,6 +106,21 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+	function verificarPin(url) {
+		const PIN_CORRECTO = "3390"; // Cambia aquí el pin de 4 dígitos
+		let intento = prompt("Ingrese el PIN para continuar:");
+
+		if (intento === PIN_CORRECTO) {
+			window.open(url, '_blank');
+		} else if (intento === null) {
+			// El usuario canceló el prompt, no hacemos nada
+		} else {
+			alert("PIN incorrecto. Acceso denegado.");
+		}
+	}
+	</script>
 
 </body>
 </html>
