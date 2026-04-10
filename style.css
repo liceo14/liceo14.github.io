@@ -219,3 +219,49 @@ iframe {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px; 
 }
+
+/* Contenedor principal del escritorio */
+.escritorio-grid {
+    display: grid;
+    /* Define columnas de mínimo 150px que llenan el espacio disponible */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 20px; /* Espacio entre botones */
+    padding: 10px;
+}
+
+/* Estilo de cada "Botón/Tarjeta" */
+.herramienta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid #003366;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+/* Efecto al pasar el mouse */
+.herramienta-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 51, 102, 0.2);
+    background-color: #f0f7ff;
+}
+
+/* Imágenes dentro de los botones */
+.herramienta-item img {
+    width: 100px;  /* Tamaño fijo para uniformidad */
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0px;
+}
+
+/* Texto debajo de la imagen */
+.herramienta-item span {
+    color: #003366;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
