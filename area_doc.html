@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+	<link rel="canonical" href="https://liceo14.github.io/area_doc.html" />
+	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liceo 14 "Treinta y Tres Orientales" - Inicio</title>
     <link rel="stylesheet" href="style.css">
@@ -75,22 +77,44 @@
 
     <main class="container">
 		<article class="post">
-			<h3>Área Docentes</h3>
-			<br>
-			<h4>Planos de clase</h4>
-			<br>
-			<a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/13HQwuBCu5SDY6Kt995FD3dTTQG_YmAcOxtWbree2XbI/edit?usp=drive_link')" class="btn-comment">Matutino</a>
-			<br>
-			<a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/18vtKLhaNXRZECcr4bcB3REQeHBU0UNlfJLZUewhoYGQ/edit?usp=drive_link')" class="btn-comment">Vespertino</a>
-			<br>
+            <h3>Escritorio de Herramientas - Docentes</h3>
+            
+            <div class="escritorio-grid">
+                
+                <a href="https://lu.anep.edu.uy/cas-anep/login?service=https://portafoliodocente.anep.edu.uy/shiro-cas" class="herramienta-item">
+                    <img src="images/logoPortafolio.png" alt="Portafolio">
+                    <span>Portafolio ANEP</span>
+                </a>
+
+                <a href="https://servicios.ces.edu.uy/portal/cgi-bin/portal/login" class="herramienta-item">
+                    <img src="images/logoPortal.png" alt="Portal de servicios">
+                    <span>Portal de servicios</span>
+                </a>
+				
+                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/13HQwuBCu5SDY6Kt995FD3dTTQG_YmAcOxtWbree2XbI/edit?usp=drive_link')" class="herramienta-item">
+                    <img src="images/logoPlano.png" alt="Planos Matutino">
+                    <span>Planos Matutino</span>
+                </a>
+
+                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/18vtKLhaNXRZECcr4bcB3REQeHBU0UNlfJLZUewhoYGQ/edit?usp=drive_link')" class="herramienta-item">
+                    <img src="images/logoPlano.png" alt="Planos Vespertino">
+                    <span>Planos Vespertino</span>
+                </a>
+
+                <a href="https://servicios.ces.edu.uy/drupal/formulas-administrativas" class="herramienta-item">
+                    <img src="images/logoFormulas.png" alt="Fórmulas adm.">
+                    <span>Form. administrativas</span>
+                </a>
+
+                <a href="javascript:void(0)" onclick="verificarPin2('parteD.html')" class="herramienta-item">
+                    <img src="images/logoParte.png" alt="Parte Diario">
+                    <span>Completar Parte</span>
+                </a>
+
+
+
+            </div>
         </article>
-		
-		<article class="post">
-			<h3>Parte Diario</h3>
-			<br>
-			<a href="javascript:void(0)" onclick="verificarPin2('parteD.html')" class="btn-comment">Completar parte</a>
-			<br>
-		</article>
     </main>
 
 	<footer class="main-footer">
@@ -113,6 +137,9 @@
 						<i class="fab fa-instagram"></i> @liceo14_mvd
 					</a>
 				</p>
+				<br>
+				<h4>Implementación y diseño institucional</h4>
+				<p>Sebastian Cortazzo Seoane</p>
 			</div>
 		</div>
 	</footer>
