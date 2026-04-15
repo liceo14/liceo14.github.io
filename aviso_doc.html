@@ -93,6 +93,11 @@
 			</div>
 			
 			<div class="form-group">
+				<label for="materia">Asignatura:</label>
+				<input type="text" id="materia" placeholder="Ej. Historia" required>
+			</div>
+			
+			<div class="form-group">
 				<label for="fecha">Fecha de la inasistencia:</label>
 				<input type="date" id="fecha" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
 			</div>
@@ -182,6 +187,7 @@
 		// 1. Captura de valores
 		const nombre = document.getElementById('full-name').value;
 		const cedula = document.getElementById('cedula').value;
+		const materia = document.getElementById('materia').value;
 		const fecha = document.getElementById('fecha').value;
 		const turno = document.getElementById('turno').value;
 		const motivo = document.getElementById('motivo').value;
@@ -206,6 +212,7 @@
 	---------------------------------
 	DOCENTE: ${nombre}
 	CÉDULA: ${cedula}
+	MATERIA: ${materia}
 	FECHA: ${fecha}
 	TURNO: ${turno}
 	MOTIVO: ${motivo}
