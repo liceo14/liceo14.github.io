@@ -159,6 +159,7 @@ iframe {
     height: 600px; /* Altura visual en la página */
     border-radius: 4px;
     margin-top: 10px;
+	position: relative; /* nuevo */
 }
 
 .iframe-small {
@@ -169,6 +170,9 @@ iframe {
     border: none;
 }
 
+.iframe-fullscreen {
+    height: 85vh; /* Ocupa el 85% del alto de la pantalla */
+}
 /* Contenedor del Blog (Limpio) */
 .blog-wrapper {
     background: white;
