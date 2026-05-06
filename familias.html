@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-	<link rel="canonical" href="https://liceo14.github.io/area_ads.html" />
+	<link rel="canonical" href="https://liceo14.github.io/familias.html" />
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liceo 14 "Treinta y Tres Orientales" - Adscripción</title>
+    <title>Liceo 14 "Treinta y Tres Orientales" - Estudiantes</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -76,40 +76,88 @@
     </nav>
 
     <main class="container">
-        <article class="post">
-            <h3>Adscripción Turno Matutino</h3>
-			<ul>
-				<li>Isabel Ferraz</li>
-				<li>Mónica Luchi</li>
-				<li>Roberto Tapia</li>
-				<li>Rosa Grazziani</li>
-			</ul>
-			<img src="https://lh3.googleusercontent.com/d/139si90A-GhtOndeRbMmPdEFmbIBrhwLo"
-				alt="Turno Matutino"
-				style="max-width: 50%; height: auto;">
-			<br>
-		</article>
-
-        <article class="post">
-            <h3>Adscripción Turno Vespertino</h3>
-			<ul>
-				<li>Nathalia Moratorio</li>
-				<li>Natalia Pasina</li>
-				<li>Ignacio Verrastro</li>
-			</ul>
-			<img src="https://lh3.googleusercontent.com/d/1xsYqhhRb3sCWVU3hQDtTZgiDMK7WOy9f"
-				alt="Turno Vespertino"
-				style="max-width: 50%; height: auto;">
-		</article>
-
 		<article class="post">
-			<h3>Herramientas</h3>
-			<a href="https://beneficio.ceibal.edu.uy/consulta" class="btn-comment">Consultar beneficio equipo Ceibal</a>
+			<h3>Escritorio de Herramientas - Familias</h3>
+			
+			<div class="escritorio-grid">
+				
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-calendario')" class="herramienta-item">
+					<img src="images/logoCalendario.png" alt="Calendario">
+					<span>Calendario</span>
+				</a>
+
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-bienestar')" class="herramienta-item">
+					<img src="images/logoCD.png" alt="Bienestar y ciudadanía digital">
+					<span>Bienestar y ciudadanía digital</span>
+				</a>
+
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-formacion')" class="herramienta-item">
+					<img src="images/logoPlano.png" alt="Formación y oportunidades">
+					<span>Formación y oportunidades</span>
+				</a>
+
+				<a href="mailto:aulainfo14@gmail.com?subject=Mensaje desde Web" class="herramienta-item">
+					<img src="images/logoVoz.png" alt="Voz de la familia">
+					<span>Voz de la familia</span>
+				</a>
+
+				</div>
+		</article>
+		
+		<article id="sec-calendario" class="post seccion-familia" style="display:none;">
+			<h3>Calendario</h3>
 			<br>
-			<a href="https://servicios.ces.edu.uy/node/pases/form/paso1" class="btn-comment">Destino de estudiantes</a>
-			<br>
-        </article>
-		<a href="mailto:liceo14.adsc@gmail.com?subject=Mensaje desde Web" class="btn-comment">Enviar mensaje</a>
+			<div style="width: 100%; max-width: 800px; margin: 0 auto; overflow: hidden; border-radius: 8px; border: 2px solid #2D5A27;">
+				<iframe 
+					src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FMontevideo&showPrint=0&src=YXVsYWluZm8xNEBnbWFpbC5jb20&src=YzAyYzQzODUwNzQ4YjZiZjA4Y2ZmYmJlYTdkOTA3MGNkZDlhZmQ0MDk4Zjc5ZGIyZDZmYzI4YzllMWRhZDVhY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&mode=WEEK" 
+					style="border:0" 
+					width="100%" 
+					height="500" 
+					frameborder="0" 
+					scrolling="no">
+				</iframe>
+			</div>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+		
+		<article id="sec-bienestar" class="post seccion-familia" style="display:none;">
+			<h3>Bienestar y ciudadanía digital</h3>
+			<div class="escritorio-grid">
+			
+				<a href="https://capacitacion.agesic.gub.uy/course/index.php?categoryid=10" target="_blank" class="herramienta-item">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Logo_de_Agesic.png" alt="Agesic">
+					<span>Agesic</span>
+				</a>
+			
+				<a href="https://ceibal.edu.uy/institucional/ciudadania-digital/familias/" target="_blank" class="herramienta-item">
+					<img src="images/logoCeibal.png" alt="Maleta Ceibal">
+					<span>Recursos Ceibal</span>
+				</a>
+				
+				<a href="https://www.pantallasamigas.net/category/ciudadania-digital-blog/" target="_blank" class="herramienta-item">
+					<img src="https://pbs.twimg.com/profile_images/670975418124644353/b74axVDZ_400x400.png" alt="Pantallas amigas">
+					<span>Pantallas amigas</span>
+				</a>
+				
+				<a href="https://www.unicef.org/uruguay/convivencia-digital" target="_blank" class="herramienta-item">
+					<img src="https://www3.gobiernodecanarias.org/medusa/wiki/images/a/ac/Unicef-logo.png" alt="Unicef">
+					<span>Unicef</span>
+				</a>
+			</div>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+
+		<article id="sec-formacion" class="post seccion-familia" style="display:none;">
+			<h3>Formación y oportunidades</h3>
+			<div class="escritorio-grid">
+				<a href="road_end.html" target="_blank" class="herramienta-item">
+					<img src="images/logoCalendario.png" alt="Calendario">
+					<span>Calendario</span>
+				</a>
+			</div>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+		
     </main>
 
 	<footer class="main-footer">
@@ -152,6 +200,37 @@
 			alert("PIN incorrecto. Acceso denegado.");
 		}
 	}
+	
+	function mostrarSeccion(idSeccion) {
+		// 1. Buscamos todas las secciones que tienen la clase 'seccion-familia'
+		const secciones = document.querySelectorAll('.seccion-familia');
+		
+		// 2. Las ocultamos todas
+		secciones.forEach(sec => {
+			sec.style.display = 'none';
+		});
+		
+		// 3. Mostramos solo la que nos interesa
+		const seccionAMostrar = document.getElementById(idSeccion);
+		if (seccionAMostrar) {
+			seccionAMostrar.style.display = 'block';
+			
+			// Opcional: Hacer scroll suave hasta la sección para que el usuario note el cambio
+			seccionAMostrar.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+	
+	// Oculta todos los contenidos adicionales
+	function ocultarTodo() {
+		const secciones = document.querySelectorAll('.seccion-familia');
+		secciones.forEach(sec => {
+			sec.style.display = 'none';
+		});
+		
+		// Opcional: Vuelve al inicio de la página suavemente
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
+	
 	</script>
 
 </body>

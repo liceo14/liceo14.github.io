@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-	<link rel="canonical" href="https://liceo14.github.io/area_doc.html" />
+	<link rel="canonical" href="https://liceo14.github.io/road_end.html" />
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liceo 14 "Treinta y Tres Orientales" - Docentes</title>
+    <title>Liceo 14 "Treinta y Tres Orientales" - Nada por aquí</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -18,9 +18,9 @@
         </div>
     </header>
 
-        <nav class="navbar">
+    <nav class="navbar">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" >Inicio</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn" >Horarios</a>
                 <div class="dropdown-content">
@@ -30,7 +30,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn active" >Docentes</a>
+                <a href="javascript:void(0)" class="dropbtn" >Docentes</a>
                 <div class="dropdown-content">
                     <a href="aviso_doc.html" >Aviso inasistencias docentes</a>
 					<a href="area_doc.html" >Escritorio</a>
@@ -75,61 +75,17 @@
         </ul>
     </nav>
 
-    <main class="container">
-		<article class="post">
-            <h3>Escritorio de Herramientas - Docentes</h3>
-            
-            <div class="escritorio-grid">
-                
-                <a href="https://lu.anep.edu.uy/cas-anep/login?service=https://portafoliodocente.anep.edu.uy/shiro-cas" class="herramienta-item">
-                    <img src="images/logoPortafolio.png" alt="Portafolio">
-                    <span>Portafolio ANEP</span>
-                </a>
-
-                <a href="https://servicios.ces.edu.uy/portal/cgi-bin/portal/login" class="herramienta-item">
-                    <img src="images/logoPortal.png" alt="Portal de servicios">
-                    <span>Portal de servicios</span>
-                </a>
-				
-                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/13HQwuBCu5SDY6Kt995FD3dTTQG_YmAcOxtWbree2XbI/edit?usp=drive_link')" class="herramienta-item">
-                    <img src="images/logoPlano.png" alt="Planos Matutino">
-                    <span>Planos Matutino</span>
-                </a>
-
-                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/18vtKLhaNXRZECcr4bcB3REQeHBU0UNlfJLZUewhoYGQ/edit?usp=drive_link')" class="herramienta-item">
-                    <img src="images/logoPlano.png" alt="Planos Vespertino">
-                    <span>Planos Vespertino</span>
-                </a>
-
-                <a href="aviso_doc.html" class="herramienta-item">
-                    <img src="images/logoAviso.png" alt="Avisos">
-                    <span>Avisos de inasistencia</span>
-                </a>
-				
-                <a href="https://ceibal.schoology.com/" class="herramienta-item">
-                    <img src="images/logoCREA.png" alt="Crea Ceibal">
-                    <span>Crea Ceibal</span>
-                </a>
-				
-                <a href="https://servicios.ces.edu.uy/drupal/formulas-administrativas" class="herramienta-item">
-                    <img src="images/logoFormulas.png" alt="Fórmulas adm.">
-                    <span>Form. administrativas</span>
-                </a>
-
-                <a href="reservas.html" class="herramienta-item">
-                    <img src="images/logoReserva.png" alt="Reservas">
-                    <span>Reservas</span>
-                </a>
-
-                <a href="https://classroomscreen.com/" class="herramienta-item">
-                    <img src="images/classroom.png" alt="Pizarra interactiva">
-                    <span>Pizarra interactiva</span>
-                </a>
-				
-            </div>
-        </article>
-    </main>
-
+	<div class="container">
+		<section class="post">
+			<h3>Nada por aquí.</h3>
+			<br>
+			<p>Regresa en otro momento</p>
+			<br>
+			<a href="index.html" class="btn-comment">Volver al inicio</a>
+			</form>
+		</section>
+	</div>
+	
 	<footer class="main-footer">
 		<div class="footer-grid">
 			<div class="contact-info">
@@ -156,34 +112,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<script>
-		function verificarPin(url) {
-			const PIN_CORRECTO = "1963"; // Cambia aquí el pin de 4 dígitos
-			let intento = prompt("Ingrese el PIN para continuar:");
-
-			if (intento === PIN_CORRECTO) {
-				window.open(url, '_blank');
-			} else if (intento === null) {
-				// El usuario canceló el prompt, no hacemos nada
-			} else {
-				alert("PIN incorrecto. Acceso denegado.");
-			}
-		}
-
-		function verificarPin2(url) {
-			const PIN_CORRECTO = "1935"; // Cambia aquí el pin de 4 dígitos
-			let intento = prompt("Ingrese el PIN para continuar:");
-
-			if (intento === PIN_CORRECTO) {
-				window.open(url, '_blank');
-			} else if (intento === null) {
-				// El usuario canceló el prompt, no hacemos nada
-			} else {
-				alert("PIN incorrecto. Acceso denegado.");
-			}
-		}
-	</script>
 
 </body>
 </html>
