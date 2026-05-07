@@ -121,11 +121,22 @@ body {
     margin-bottom: 15px;
 }
 
-.post img {
-    max-width: 100%;
+.post-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto con la imagen */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.post-text {
+    flex: 1; /* El texto ocupa el espacio restante */
+}
+
+.post-content img {
+    max-width: 35%; 
     height: auto;
     border-radius: 8px;
-    margin: 10px 0;
+    object-fit: cover;
 }
 
 /* 6. Utilidades y Botones */
