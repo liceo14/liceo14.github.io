@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Juramento de fidelidad de la bandera: 19 de Junio",
+    "contenido": "El acto dará comienzo a las 9:00 horas, los jurantes deben presentarse a las 8:30 horas.",
+    "imagen": "http://www.dgeip.edu.uy/documentos/galerias/prensa/5068/portada.jpg",
+    "enlace": "https://www.dgeip.edu.uy/prensa/5068-19-de-junio/"
+  },
+  {
+    "titulo": "Novedades",
+    "contenido": "En la sección novedades, encontrarás noticias de tu interés.",
+    "imagen": "",
+    "enlace": "novedades.html"
+  },
+  {
+    "titulo": "Receso de vacaciones",
+    "contenido": "Las vacaciones de invierno se extenderán desde el 29 de junio al 3 de julio.",
+    "imagen": "https://www.anep.edu.uy/sites/default/files/images/2025/noticias/diciembre/251211/calendario-2026/Calendario%20ANEP%202026.jpg",
+    "enlace": "https://www.anep.edu.uy/calendario-actividades-ano-lectivo-2026"
+  }
+]
