@@ -1,4 +1,4 @@
-documentdocument.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     // 1. Cargar la barra de navegación de forma dinámica
     const navbarContainer = document.getElementById("main-navbar");
     if (navbarContainer) {
