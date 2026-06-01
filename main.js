@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			// Validar si la noticia incluye imagen
 			if (item.imagen && item.imagen.trim() !== "") {
 				noticiaImagen.src = item.imagen;
-				noticiaImagenContainer.style.display = "block";
+				noticiaImagenContainer.style.display = "flex"; /* Cambiado a flex para mantener el alineado */
 			} else {
 				noticiaImagenContainer.style.display = "none";
 				noticiaImagen.src = "";
@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				noticiaEnlace.href = item.enlace;
 				noticiaEnlace.style.display = "inline-block";
 			} else {
+				// En tu regla dijiste: "siempre habrá enlace al haber imagen". 
+				// Si no hay enlace ni imagen, ocultamos el botón de forma segura.
 				noticiaEnlace.style.display = "none";
 				noticiaEnlace.href = "#";
 			}
