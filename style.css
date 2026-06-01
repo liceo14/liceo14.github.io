@@ -123,20 +123,38 @@ body {
 
 .post-content {
     display: flex;
-    align-items: center; /* Centra verticalmente el texto con la imagen */
+    flex-wrap: wrap; /* <-- CLAVE: Permite que la imagen baje si requiere más espacio */
+    align-items: flex-start; 
     justify-content: space-between;
-    gap: 20px; /* Espacio entre el texto y la imagen */
+    gap: 20px; 
 }
 
 .post-text {
-    flex: 1; /* El texto ocupa el espacio restante */
+    flex: 1;
+    min-width: 280px; /* Evita que el texto se comprima a menos de este ancho */
 }
 
 .post-content img {
-    max-width: 35%; 
+    width: 100%;       
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain; /* Cambiado a contain para asegurar que las planillas de aulas no se recorten */
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.post-content > a {
+    margin-left: auto;
+    display: block;
+    width: 55%;       /* <-- Subimos al 55% para que la grilla de aulas se vea enorme */
+    min-width: 320px; /* Tamaño mínimo aceptable para que no se rompa en celulares */
+    flex-shrink: 0;
+}
+
+.post-content img:hover {
+    opacity: 0.9; /* Hace un leve efecto visual al pasar el mouse */
+	transform: scale(1.02); /* Un sutil efecto de aumento al pasar el mouse */
 }
 
 /* 6. Utilidades y Botones */
