@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navbarContainer) {
         fetch("navbar.html")
             .then(response => {
-                if (!response.ok && response.status !== 0) throw new Error("Error al cargar la barra de navegación");
+                if (!response.ok) throw new Error("Error al cargar la barra de navegación");
                 return response.text();
             })
             .then(data => {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (footerContainer) {
         fetch("footer.html")
             .then(response => {
-                if (!response.ok && response.status !== 0) throw new Error("Error al cargar el footer");
+                if (!response.ok) throw new Error("Error al cargar el footer");
                 return response.text();
             })
             .then(data => {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		fetch("noticias.json")
 			.then(response => {
 				// MODIFICACIÓN AQUÍ: Permite el estado 0 para archivos abiertos localmente en el navegador
-				if (!response.ok && response.status !== 0) throw new Error("No se pudo cargar el archivo de noticias.");
+				if (!response.ok) throw new Error("No se pudo cargar el archivo de noticias.");
 				return response.json();
 			})
 			.then(data => {
