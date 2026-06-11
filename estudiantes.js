@@ -4,7 +4,7 @@ const NOVEDADES = [
         titulo: "Organización de las actividades formativas y de esparcimiento",
         fecha: "11 de junio, 2026",
         contenido: "",
-        imagen: "https://lh3.googleusercontent.com/d/1_MpCS6XzGnlA1RgFhdYP0xm_gKm87yVT",
+        imagen: "https://lh3.googleusercontent.com/d/1B_hwpBlpQK_fIKPhFSRdheJ12twSicXb",
         enlace: ""
     }
  ];
