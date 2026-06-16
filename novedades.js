@@ -3,7 +3,9 @@ const NOVEDADES = [
     {
         titulo: "Acto 19 de junio",
         fecha: "01 de junio, 2026",
-        contenido: "El acto comenzará a las 9:00 horas. Los jurantes deben presentarse a las 8:30 horas. ",
+        contenido:`El inicio del acto protocolar está fijado para la hora 9:00 para todos los estudiantes de séptimo año del liceo y todos aquellos que no hayan jurado antes.
+		Los estudiantes están convocados a la hora 8:30 para el pasaje de lista y la formación en el patio del liceo. Concluido el acto, deberán volver al salón de clase asignado, donde se hará entrega de los certificados correspondientes.
+		Invitamos a todas las familias a la hora 8:50 para acompañar a los estudiantes en este importante acto.`,
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj0evWnjoJgc42hJN203MgAyDxp8soqBSQ6iNTt-uOEJfmQov0xcw9p7mY8tn7j5xN0UKRtLvbrZ6zbBScYWrdEKe1WHL3VinicHRubkvR5fcEfmTPTayWpEDIUTPHo_JTBBzlHgIA0ZcyQJRiu2r_FT3TjcEIcdlgdJmWBrYdpGBKjk5Uy5kl-e9vzik/w400-h200/portada19.jpg",
         enlace: ""
     },
@@ -55,7 +57,7 @@ const NOVEDADES = [
         contenido: "",
         imagen: "https://www.anep.edu.uy/sites/default/files/images/2025/noticias/diciembre/251211/calendario-2026/Calendario%20ANEP%2020262.jpg",
         enlace: ""
-    },
+    }
  ];
 
 // Función para renderizar las novedades de forma dinámica
@@ -69,6 +71,9 @@ function cargarCarteleraNovedades() {
         const article = document.createElement("article");
         article.className = "post";
 
+        // Reemplazamos los saltos de línea (\n) por etiquetas <br> antes de renderizar
+        const contenidoConSaltos = novedad.contenido.replace(/\n/g, '<br>');
+
         let estructuraHtml = `
             <h3><i class="fa-solid fa-newspaper"></i> ${novedad.titulo}</h3>
             <p><small class="highlight-line"><i class="fa-regular fa-calendar"></i> ${novedad.fecha}</small></p>
@@ -79,7 +84,7 @@ function cargarCarteleraNovedades() {
             estructuraHtml += `
                 <div class="post-content">
                     <div class="post-text">
-                        <p>${novedad.contenido}</p>
+                        <p>${contenidoConSaltos}</p>
                     </div>
                     <a href="${novedad.imagen}" target="_blank">
                         <img src="${novedad.imagen}" alt="Imagen de ${novedad.titulo}">
@@ -87,7 +92,11 @@ function cargarCarteleraNovedades() {
                 </div>
             `;
         } else {
-            estructuraHtml += `<p>${novedad.contenido}</p>`;
+            estructuraHtml += `
+                <div class="post-text">
+                    <p>${contenidoConSaltos}</p>
+                </div>
+            `;
         }
 
         if (novedad.enlace) {
