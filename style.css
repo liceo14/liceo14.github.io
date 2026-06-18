@@ -253,6 +253,18 @@ iframe {
     gap: 20px; 
 }
 
+.footer-list {
+    list-style: none;     /* Chau círculos/viñetas */
+    padding: 0;           /* Reseteamos el padding por defecto de las listas */
+    margin: 5px 0 10px 0; /* Margen vertical para separarla de los textos <p> */
+}
+
+.footer-list li {
+    padding-left: 15px;   /* Genera la sangría visual que querés */
+    font-size: 0.95rem;   /* Un toque más sutil para los datos internos */
+    color: #ccc;          /* Un gris claro para que contraste suavemente en el fondo oscuro */
+}
+
 /* Contenedor principal del escritorio */
 .escritorio-grid {
     display: grid;
