@@ -1,13 +1,13 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
     {
-        titulo: "Inscripciones Plan 2014",
+        titulo: "Inscripciones Plan 2013",
         fecha: "06 de julio, 2026",
         contenido: `Del 15 al 17 de julio.
 		Horario: 09:00 a 15:00 hs.
 		Concurrir con:
 		- Adulto referente
-		- Docummento de identidad`,
+		- Documento de identidad`,
         imagen: "",
         enlace: ""
     },
