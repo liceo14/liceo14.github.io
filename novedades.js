@@ -1,6 +1,24 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
     {
+        titulo: "Inscripciones Plan 2014",
+        fecha: "06 de julio, 2026",
+        contenido: `Del 15 al 17 de julio.
+		Horario: 09:00 a 15:00 hs.
+		Concurrir con:
+		- Adulto referente
+		- Docummento de identidad`,
+        imagen: "",
+        enlace: ""
+    },
+    {
+        titulo: "Calendario de exámenes julio 2026",
+        fecha: "06 de julio, 2026",
+        contenido: "",
+        imagen: "https://lh3.googleusercontent.com/d/1ElxJnysns_YaSpnYCfjL3lwP2si7jJKd",
+        enlace: ""
+    },
+    {
         titulo: "Acto 19 de junio",
         fecha: "01 de junio, 2026",
         contenido:`El inicio del acto protocolar está fijado para la hora 9:00 para todos los estudiantes de séptimo año del liceo y todos aquellos que no hayan jurado antes.
