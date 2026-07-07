@@ -58,12 +58,12 @@
                     <span>Form. administrativas</span>
                 </a>
 
-                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/13HQwuBCu5SDY6Kt995FD3dTTQG_YmAcOxtWbree2XbI/edit?usp=drive_link')" class="herramienta-item">
+                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/13HQwuBCu5SDY6Kt995FD3dTTQG_YmAcOxtWbree2XbI/edit?usp=drive_link','plano')" class="herramienta-item">
                     <img src="images/logoPlano.png" alt="Planos Matutino">
                     <span>Planos Matutino</span>
                 </a>
 
-                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/18vtKLhaNXRZECcr4bcB3REQeHBU0UNlfJLZUewhoYGQ/edit?usp=drive_link')" class="herramienta-item">
+                <a href="javascript:void(0)" onclick="verificarPin('https://docs.google.com/spreadsheets/d/18vtKLhaNXRZECcr4bcB3REQeHBU0UNlfJLZUewhoYGQ/edit?usp=drive_link','plano')" class="herramienta-item">
                     <img src="images/logoPlano.png" alt="Planos Vespertino">
                     <span>Planos Vespertino</span>
                 </a>
@@ -96,34 +96,7 @@
 		id="main-footer">
 	</footer>
 
-	<script>
-		function verificarPin(url) {
-			const PIN_CORRECTO = "1963"; // Cambia aquí el pin de 4 dígitos
-			let intento = prompt("Ingrese el PIN para continuar:");
-
-			if (intento === PIN_CORRECTO) {
-				window.open(url, '_blank');
-			} else if (intento === null) {
-				// El usuario canceló el prompt, no hacemos nada
-			} else {
-				alert("PIN incorrecto. Acceso denegado.");
-			}
-		}
-
-		function verificarPin2(url) {
-			const PIN_CORRECTO = "1935"; // Cambia aquí el pin de 4 dígitos
-			let intento = prompt("Ingrese el PIN para continuar:");
-
-			if (intento === PIN_CORRECTO) {
-				window.open(url, '_blank');
-			} else if (intento === null) {
-				// El usuario canceló el prompt, no hacemos nada
-			} else {
-				alert("PIN incorrecto. Acceso denegado.");
-			}
-		}
-	</script>
-
+	<script src="check_pin.js"></script>
 	<script src="main.js"></script>
 
 </body>

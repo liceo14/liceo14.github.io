@@ -63,7 +63,7 @@
                     <span>Perfil POITE</span>
                 </a>
 
-                <a href="javascript:void(0)" onclick="verificarPin('https://forms.gle/N8PMVRt77GoXaz8F6')" class="herramienta-item">
+                <a href="javascript:void(0)" onclick="verificarPin('https://forms.gle/N8PMVRt77GoXaz8F6','poite')" class="herramienta-item">
                     <img src="images/logoFormulas.png" alt="Registro diario">
                     <span>Registro diario</span>
                 </a>
@@ -81,21 +81,7 @@
 		id="main-footer">
 	</footer>
 
-	<script>
-	function verificarPin(url) {
-		const PIN_CORRECTO = "3390"; // Cambia aquí el pin de 4 dígitos
-		let intento = prompt("Ingrese el PIN para continuar:");
-
-		if (intento === PIN_CORRECTO) {
-			window.open(url, '_blank');
-		} else if (intento === null) {
-			// El usuario canceló el prompt, no hacemos nada
-		} else {
-			alert("PIN incorrecto. Acceso denegado.");
-		}
-	}
-	</script>
-	
+	<script src="check_pin.js"></script>
 	<script src="main.js"></script>
 
 </body>

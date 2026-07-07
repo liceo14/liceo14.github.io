@@ -265,6 +265,11 @@ iframe {
     color: #ccc;          /* Un gris claro para que contraste suavemente en el fondo oscuro */
 }
 
+.footer-list li span {
+    font-weight: bold;
+    color: #fff;          /* Blanco pleno para el número */
+}
+
 /* Contenedor principal del escritorio */
 .escritorio-grid {
     display: grid;
