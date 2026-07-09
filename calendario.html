@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<link rel="canonical" href="https://liceo14.github.io/calendario.html" />
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceo 14 "Treinta y Tres Orientales" - Calendario</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="overlay">
+            <h1>Liceo 14</h1>
+            <h2>"Treinta y Tres Orientales"</h2>
+        </div>
+    </header>
+
+    <nav class="navbar"
+		id="main-navbar">
+    </nav>
+
+    <main class="container">
+		<article class="post">
+			<h3>Calendario - Estudiantes</h3>
+			
+			<div class="escritorio-grid">
+				
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-7mo')" class="herramienta-item">
+					<img src="images/logo7mo.png" alt="Pruebas 7MO">
+					<span>Pruebas 7MO</span>
+				</a>
+
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-8vo')" class="herramienta-item">
+					<img src="images/logo8vo.png" alt="Pruebas 8VO">
+					<span>Pruebas 8VO</span>
+				</a>
+
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-9no')" class="herramienta-item">
+					<img src="images/logo9no.png" alt="Pruebas 9NO">
+					<span>Pruebas 9NO</span>
+				</a>
+
+				<a href="javascript:void(0)" onclick="mostrarSeccion('sec-1ems')" class="herramienta-item">
+					<img src="images/logo1ems.png" alt="Pruebas 1EMS">
+					<span>Pruebas 1EMS</span>
+				</a>
+
+			</div>
+		</article>
+
+		<article id="sec-7mo" class="post seccion-familia" style="display:none;">
+			<h3>Pruebas 7MO</h3>
+			<br>
+			<h4>
+				<p>Aquí las fechas</p>
+			</h4>
+			<br>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+
+		<article id="sec-8vo" class="post seccion-familia" style="display:none;">
+			<h3>Pruebas 8VO</h3>
+			<br>
+			<h4>
+				<p>Aquí las fechas</p>
+			</h4>
+			<br>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+		
+		<article id="sec-9no" class="post seccion-familia" style="display:none;">
+			<h3>Pruebas 9NO</h3>
+			<br>
+			<h4>
+				<p>Aquí las fechas</p>
+			</h4>
+			<br>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+		
+		<article id="sec-1ems" class="post seccion-familia" style="display:none;">
+			<h3>Pruebas 1EMS</h3>
+			<br>
+			<h4>
+				<p>Aquí las fechas</p>
+			</h4>
+			<br>
+			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
+		</article>
+		
+		<a href="mailto:aulainfo14@gmail.com?subject=Mensaje desde Web" class="btn-comment">Enviar mensaje</a>
+    </main>
+
+	<footer class="main-footer"
+		id="main-footer">
+	</footer>
+
+	<script src="main.js"></script>
+	<script src="estudiantes.js"></script>
+
+	<script>
+	function mostrarSeccion(idSeccion) {
+		// 1. Buscamos todas las secciones que tienen la clase 'seccion-familia'
+		const secciones = document.querySelectorAll('.seccion-familia');
+		
+		// 2. Las ocultamos todas
+		secciones.forEach(sec => {
+			sec.style.display = 'none';
+		});
+		
+		// 3. Mostramos solo la que nos interesa
+		const seccionAMostrar = document.getElementById(idSeccion);
+		if (seccionAMostrar) {
+			seccionAMostrar.style.display = 'block';
+			
+			// Opcional: Hacer scroll suave hasta la sección para que el usuario note el cambio
+			seccionAMostrar.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+	
+	// Oculta todos los contenidos adicionales
+	function ocultarTodo() {
+		const secciones = document.querySelectorAll('.seccion-familia');
+		secciones.forEach(sec => {
+			sec.style.display = 'none';
+		});
+		
+		// Opcional: Vuelve al inicio de la página suavemente
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}	
+	</script>
+
+</body>
+</html>
