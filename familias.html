@@ -127,19 +127,6 @@
 	</footer>
 
 	<script>
-	function verificarPin(url) {
-		const PIN_CORRECTO = "3390"; // Cambia aquí el pin de 4 dígitos
-		let intento = prompt("Ingrese el PIN para continuar:");
-
-		if (intento === PIN_CORRECTO) {
-			window.open(url, '_blank');
-		} else if (intento === null) {
-			// El usuario canceló el prompt, no hacemos nada
-		} else {
-			alert("PIN incorrecto. Acceso denegado.");
-		}
-	}
-	
 	function mostrarSeccion(idSeccion) {
 		// 1. Buscamos todas las secciones que tienen la clase 'seccion-familia'
 		const secciones = document.querySelectorAll('.seccion-familia');
