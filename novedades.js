@@ -1,6 +1,13 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
     {
+        titulo: "Calendario de Reuniones agosto 2026",
+        fecha: "13 de julio, 2026",
+        contenido: "Calendario de Reuniones Plan EBI y EMS.",
+        imagen: "https://lh3.googleusercontent.com/d/1Uz_-1tjq0oKalEJEoPlKttWTPq2MeEpg",
+        enlace: ""
+    },
+    {
         titulo: "Inscripciones Plan 2013",
         fecha: "06 de julio, 2026",
         contenido: `Del 15 al 17 de julio.
