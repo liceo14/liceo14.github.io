@@ -4,7 +4,7 @@
 
 	function mostrarSeccion(idSeccion) {
 		// 1. Buscamos todas las secciones que tienen la clase 'seccion-familia'
-		const secciones = document.querySelectorAll('.seccion-familia');
+		const secciones = document.querySelectorAll('.seccion');
 		
 		// 2. Las ocultamos todas
 		secciones.forEach(sec => {
@@ -23,7 +23,7 @@
 	
 	// Oculta todos los contenidos adicionales
 	function ocultarTodo() {
-		const secciones = document.querySelectorAll('.seccion-familia');
+		const secciones = document.querySelectorAll('.seccion');
 		secciones.forEach(sec => {
 			sec.style.display = 'none';
 		});

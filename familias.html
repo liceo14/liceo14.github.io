@@ -51,7 +51,7 @@
 			</div>
 		</article>
 		
-		<article id="sec-calendario" class="post seccion-familia" style="display:none;">
+		<article id="sec-calendario" class="post seccion" style="display:none;">
 			<h3>Calendario</h3>
 			<br>
 			<div style="width: 100%; max-width: 800px; margin: 0 auto; overflow: hidden; border-radius: 8px; border: 2px solid #2D5A27;">
@@ -67,7 +67,7 @@
 			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
 		</article>
 		
-		<article id="sec-bienestar" class="post seccion-familia" style="display:none;">
+		<article id="sec-bienestar" class="post seccion" style="display:none;">
 			<h3>Bienestar y ciudadanía digital</h3>
 			<div class="escritorio-grid">
 			
@@ -94,7 +94,7 @@
 			<a href="javascript:void(0)" onclick="ocultarTodo()" class="btn-comment">Regresar</a>
 		</article>
 
-		<article id="sec-formacion" class="post seccion-familia" style="display:none;">
+		<article id="sec-formacion" class="post seccion" style="display:none;">
 			<h3>Formación y oportunidades</h3>
 			<div class="escritorio-grid">
 				<a href="https://becas.edu.uy/" target="_blank" class="herramienta-item">
@@ -126,38 +126,6 @@
 		id="main-footer">
 	</footer>
 
-	<script>
-	function mostrarSeccion(idSeccion) {
-		// 1. Buscamos todas las secciones que tienen la clase 'seccion-familia'
-		const secciones = document.querySelectorAll('.seccion-familia');
-		
-		// 2. Las ocultamos todas
-		secciones.forEach(sec => {
-			sec.style.display = 'none';
-		});
-		
-		// 3. Mostramos solo la que nos interesa
-		const seccionAMostrar = document.getElementById(idSeccion);
-		if (seccionAMostrar) {
-			seccionAMostrar.style.display = 'block';
-			
-			// Opcional: Hacer scroll suave hasta la sección para que el usuario note el cambio
-			seccionAMostrar.scrollIntoView({ behavior: 'smooth' });
-		}
-	}
-	
-	// Oculta todos los contenidos adicionales
-	function ocultarTodo() {
-		const secciones = document.querySelectorAll('.seccion-familia');
-		secciones.forEach(sec => {
-			sec.style.display = 'none';
-		});
-		
-		// Opcional: Vuelve al inicio de la página suavemente
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	}	
-	</script>
-	
 	<script src="main.js"></script>
 	<script src="auxiliar.js"></script>
 
