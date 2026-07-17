@@ -6,7 +6,7 @@ const NOVEDADES = [
         contenido: `Inscripciones abiertas hasta el miércoles 2 de septiembre 2026.
 		Concurrir con documento de identidad.
 		La fórmula 69 puede solicitarse en el Liceo más cercano.`,
-        imagen: "https://acredita.anep.edu.uy/img/AcreditaES2026Logo.svg?4",
+        imagen: "https://colon.com.uy/images/2025/Sociedad/acredita-2026.jpg",
         enlace: "https://acredita.anep.edu.uy/acreditaES.html"
     },
 	{
