@@ -1,6 +1,15 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
     {
+        titulo: "Prueba Acredita ES 2026",
+        fecha: "14 de julio, 2026",
+        contenido: `Inscripciones abiertas hasta el miércoles 2 de septiembre 2026.
+		Concurrir con documento de identidad.
+		La fórmula 69 puede solicitarse en el Liceo más cercano.`,
+        imagen: "https://acredita.anep.edu.uy/img/AcreditaES2026Logo.svg?4",
+        enlace: "https://acredita.anep.edu.uy/acreditaES.html"
+    },
+	{
         titulo: "Calendario de Reuniones agosto 2026",
         fecha: "13 de julio, 2026",
         contenido: "Calendario de Reuniones Plan EBI y EMS.",
