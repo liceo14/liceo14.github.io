@@ -13,7 +13,7 @@ const NOVEDADES = [
         titulo: "Calendario de Reuniones agosto 2026",
         fecha: "13 de julio, 2026",
         contenido: "Calendario de Reuniones Plan EBI y EMS.",
-        imagen: "https://lh3.googleusercontent.com/d/1Uz_-1tjq0oKalEJEoPlKttWTPq2MeEpg",
+        imagen: "https://lh3.googleusercontent.com/d/1l9kkU2uez98tijH0xLSP0WB4sBmx2-LT",
         enlace: ""
     },
     {
