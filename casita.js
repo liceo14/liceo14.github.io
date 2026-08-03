@@ -7,13 +7,6 @@ const NOVEDADES = [
         imagen: "https://lh3.googleusercontent.com/d/1Ndwd3rvDcQNVrwVptsOfdTedaj7fOjQr",
         enlace: ""
     },
-	{
-        titulo: "Organización de las actividades formativas y de esparcimiento",
-        fecha: "11 de junio, 2026",
-        contenido: "",
-        imagen: "https://lh3.googleusercontent.com/d/1B_hwpBlpQK_fIKPhFSRdheJ12twSicXb",
-        enlace: ""
-    }
  ];
 
 // Función para renderizar las novedades de forma dinámica
