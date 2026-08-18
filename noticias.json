@@ -3,18 +3,21 @@
     "titulo": "Calendario de Reuniones agosto 2026",
     "contenido": "Calendario de Reuniones Plan EBI y EMS.",
     "imagen": "https://lh3.googleusercontent.com/d/190XAQmb0nQGk30R6wdIupNp403YPvdnL",
-    "enlace": "novedades.html#cartelera-dinamica"
+    "enlace": "novedades.html#cartelera-dinamica",
+	"lsu": ""
   },
   {
     "titulo": "Prueba Acredita ES",
     "contenido": "Esta prueba permite acreditar el equivalente a EMS. Incripciones hasta el 2 de setiembre.",
     "imagen": "https://colon.com.uy/images/2025/Sociedad/acredita-2026.jpg",
-    "enlace": "novedades.html#cartelera-dinamica"
+    "enlace": "novedades.html#cartelera-dinamica",
+	"lsu": ""
   },
   {
     "titulo": "Novedades",
     "contenido": "En la sección novedades, encontrarás noticias de tu interés.",
     "imagen": "",
-    "enlace": "novedades.html"
+    "enlace": "novedades.html",
+	"lsu": ""
   }
-]
+ ]

@@ -7,14 +7,16 @@ const NOVEDADES = [
 		Concurrir con documento de identidad.
 		La fórmula 69 puede solicitarse en el Liceo más cercano.`,
         imagen: "https://colon.com.uy/images/2025/Sociedad/acredita-2026.jpg",
-        enlace: "https://acredita.anep.edu.uy/acreditaES.html"
+        enlace: "https://acredita.anep.edu.uy/acreditaES.html",
+		lsu: "9iM_NDqtgGw"
     },
 	{
         titulo: "Calendario de Reuniones agosto 2026",
         fecha: "13 de julio, 2026",
         contenido: "Calendario de Reuniones Plan EBI y EMS.",
         imagen: "https://lh3.googleusercontent.com/d/190XAQmb0nQGk30R6wdIupNp403YPvdnL",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Inscripciones Plan 2013",
@@ -25,14 +27,16 @@ const NOVEDADES = [
 		- Adulto referente
 		- Documento de identidad`,
         imagen: "",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Calendario de exámenes julio 2026",
         fecha: "06 de julio, 2026",
         contenido: "",
         imagen: "https://lh3.googleusercontent.com/d/1ElxJnysns_YaSpnYCfjL3lwP2si7jJKd",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Acto 19 de junio",
@@ -41,56 +45,64 @@ const NOVEDADES = [
 		Los estudiantes están convocados a la hora 8:30 para el pasaje de lista y la formación en el patio del liceo. Concluido el acto, deberán volver al salón de clase asignado, donde se hará entrega de los certificados correspondientes.
 		Invitamos a todas las familias a la hora 8:50 para acompañar a los estudiantes en este importante acto.`,
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj0evWnjoJgc42hJN203MgAyDxp8soqBSQ6iNTt-uOEJfmQov0xcw9p7mY8tn7j5xN0UKRtLvbrZ6zbBScYWrdEKe1WHL3VinicHRubkvR5fcEfmTPTayWpEDIUTPHo_JTBBzlHgIA0ZcyQJRiu2r_FT3TjcEIcdlgdJmWBrYdpGBKjk5Uy5kl-e9vzik/w400-h200/portada19.jpg",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Café Literario",
         fecha: "25 de mayo, 2026",
         contenido: "",
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGeG82hdGknv2A0ZRMaxVP0r2AlXMHTBzP2DRioPR55BYH4q9lrL3aKaRb-veJIUOkVlYSvHPu4fh7oF9xYj_5rmXqiTgEt4q1XmJkgAGSCN0-Zw8LyhU4_H-MvCwrLQErAkdN6oIEDA9WtqHxQ7nsOldmuUu4ClLO_KbExhBlTf3Gj9LbhdUkq4y7RGo/w283-h400/cafe.png",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Reparación Equipos ACRAB 2025",
         fecha: "06 de mayo, 2026",
         contenido: "Miércoles 13 de Mayo a partir de las 10:00 hrs.",
         imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dR9_3pjYqcBqNb6MbT04fmzWT4qvUdPh9g&s",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Calendario de reuniones mayo 2026",
         fecha: "27 de abril, 2026",
         contenido: "",
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv3lN8IuXqhNdP2rmtdMTJ56JTvyMkhLRKhJJeYvdbknIihmFD53NINJjOeMX85tRMfaLBHPl2lfhD16vncnemv-RrBPTjAymnzC5YeZsE1lF87WSxckYsN_AlZbwlmx7xwcQxRlvU7ycDegdwbXo1H3Wru-z4KoKxFaSpWtdPuT7NVuxmveX4eQ9mG-Y/w400-h283/RMayo2026-page-001.jpg",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
 	{
         titulo: "Calendario de exámenes abril 2026",
         fecha: "14 de abril, 2026",
         contenido: "",
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjosjE78YWpzoh4E8m6iLOCMvul899TOptxHPfZNVgZcX8BSGbCKFNLHewv7qgex0M3VT0yTXB3bzc-cRJbLaNT6o1UKZLePZYWMPJdnaEJVTrOBb5M8QYWA5OuNNJFDMx12WE4nNqbi8tIMPPH9RCzJrTImowv4BHfwccvyi_s7TzNVbXjvoJsx39hyUE/w400-h283/ExaAbril2026.jpg",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Recambio de equipos CEIBAL",
         fecha: "07 de abril, 2026",
         contenido: "¿Cuándo? Jueves 16 de abril - 10 a 13 horas. ¿Dónde? Liceo 14 - Aula 4 (Videoconferencia en Casona)",
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEga9SA2aIZiAPOZCPF40inPk0qw_o57fUEDXTBdtX9AaQmnbgbNkIrEJWi36j-q5BsXq35TicUvLGI2UZWTGJo5DerUWUa2QSmHAOL9WCzFyhgTGTfiohIbsqMUx5OuOdqYlwbOShkr5oOMWHPnS_0N5FBsDRnSZ5E7EU82mexbAe7pbMD8p3Iev2QIJ04/w283-h400/Invitacio%CC%81n%20para%20el%20d%C3%ADa%20de%20recambio.jpg",
-        enlace: "https://beneficio.ceibal.edu.uy/consulta"
+        enlace: "https://beneficio.ceibal.edu.uy/consulta",
+		lsu: ""
     },
     {
         titulo: "Calendario de Reuniones Abril 2026",
         fecha: "24 de marzo, 2026",
         contenido: "",
         imagen: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT7PwMUwrRtq6FSifJF1hI_v6mdIsdUPBD12UR-g7PWyumRyU1gKn3X9txVzjQl20ENdXj7A7L9XpjscuwuIrRwwjcRvwHTggoq8wkyfH45_Nkj9Yn4QvKnpLAKydRSvnH77_XeV6kM6vALkOLVWS7U-BMcYuLTrA4U50y6c2DCO33IO9nSke6mAylLPg/w400-h283/Calendario%20ABR2026.jpg",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     },
     {
         titulo: "Calendario ANEP 2026",
         fecha: "2 de marzo, 2026",
         contenido: "",
         imagen: "https://www.anep.edu.uy/sites/default/files/images/2025/noticias/diciembre/251211/calendario-2026/Calendario%20ANEP%2020262.jpg",
-        enlace: ""
+        enlace: "",
+		lsu: ""
     }
  ];
 
@@ -139,6 +151,15 @@ function cargarCarteleraNovedades() {
                 <a href="${novedad.enlace}" class="btn-comment" ${novedad.enlace.startsWith('http') ? 'target="_blank"' : ''}> Leer más</a>
             `;
         }
+
+		if (novedad.lsu) {
+			estructuraHtml += `
+				<button type="button" class="btn-lsu" onclick="abrirModalLSU('${novedad.lsu}')">
+					<img src="images/lsu.png" alt="Lengua de Señas Uruguaya (LSU)">
+					<span>LSU</span>
+				</button>
+			`;
+		}
 
         article.innerHTML = estructuraHtml;
         contenedor.appendChild(article);

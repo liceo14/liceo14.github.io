@@ -115,13 +115,17 @@
 				<div class="noticia-cuerpo">
 					<div class="noticia-texto-bloque">
 						<p id="noticia-contenido"></p>
+						
+						<!-- AQUI REEMPLAZAS: Envolvemos el enlace en el nuevo div -->
+						<div class="acciones-noticia" id="noticia-acciones">
+							<a id="noticia-enlace" href="#" class="btn-comment">Leer más</a>
+							<!-- El botón de LSU se agregará dinámicamente aquí desde JS -->
+						</div>
 					</div>
 					
 					<div id="noticia-imagen-container">
 						<img id="noticia-imagen" src="" alt="Imagen de la noticia">
 					</div>
-					
-					<a id="noticia-enlace" href="#" class="btn-comment">Leer más</a>
 				</div>
 			</div>
 		</article>
@@ -150,6 +154,20 @@
 	</footer>
 	
 	<script src="main.js"></script>
+
+	<!-- Modal para reproducción de video en LSU -->
+	<div id="modal-lsu" class="modal-lsu">
+	  <div class="modal-lsu-contenido">
+		<span class="cerrar-modal-lsu" onclick="cerrarModalLSU()">&times;</span>
+		<iframe id="iframe-lsu" 
+				src="" 
+				title="Interpretación en Lengua de Señas" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				referrerpolicy="strict-origin-when-cross-origin" 
+				allowfullscreen>
+		</iframe>
+	  </div>
+	</div>
 
 </body>
 </html>
