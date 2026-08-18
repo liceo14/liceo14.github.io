@@ -1,5 +1,15 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
+	{
+        titulo: "Concurso para estudiantes: Imaginario Ceibal 2026",
+        fecha: "18 de agosto, 2026",
+	contenido: `Diseña el fondo de pantalla de laptops y tablets Ceibal 2027.
+		
+		Recepción de propuestas: hasta el 13 de setiembre de 2026 a las 23:59 h.`,
+        imagen: "https://documentos.ceibal.edu.uy/portal/2026/08/A4-concurso-imaginario-27-scaled.jpg",
+        enlace: "https://ceibal.edu.uy/institucional/imaginario-ceibal/",
+		lsu: ""
+    },
     {
         titulo: "Prueba Acredita ES 2026",
         fecha: "14 de julio, 2026",
