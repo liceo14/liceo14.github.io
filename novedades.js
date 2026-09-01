@@ -1,5 +1,13 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
+    {
+        titulo: "Calendario de exámenes setiembre 2026",
+        fecha: "1 de setiembre, 2026",
+        contenido: "",
+        imagen: "https://lh3.googleusercontent.com/d/1gKyBRPnrtOugp-po6G2PIz99eeoNp4rj",
+        enlace: "",
+		lsu: ""
+    },
 	{
         titulo: "Concurso para estudiantes: Imaginario Ceibal 2026",
         fecha: "18 de agosto, 2026",
