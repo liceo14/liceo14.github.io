@@ -1,10 +1,18 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
+	{
+        titulo: "Calendario de Reuniones octubre 2026",
+        fecha: "8 de setiembre, 2026",
+        contenido: "Calendario de Reuniones Plan EBI y EMS.",
+        imagen: "https://lh3.googleusercontent.com/d/1oiO3o-sowB_ZOEdcwR3rla6QnXS-Li6E",
+        enlace: "",
+		lsu: ""
+    },
     {
         titulo: "Calendario de exámenes setiembre 2026",
         fecha: "1 de setiembre, 2026",
         contenido: "",
-        imagen: "https://lh3.googleusercontent.com/d/1gKyBRPnrtOugp-po6G2PIz99eeoNp4rj",
+        imagen: "https://lh3.googleusercontent.com/d/16G7Y74GkwXus4QpRBzXDgTk1Bwf0IWlZ",
         enlace: "",
 		lsu: ""
     },
