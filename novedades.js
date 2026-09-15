@@ -1,6 +1,14 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
 	{
+        titulo: "Jornada recreativa 17 de setiembre de 2026",
+        fecha: "15 de setiembre, 2026",
+        contenido: "Organizada en dos turnos: Matutino y Vespertino.",
+        imagen: "https://lh3.googleusercontent.com/d/1sG8QUfr9CF9eIQ-Cva6TmzDDxICkZ8f5",
+        enlace: "",
+		lsu: ""
+    },
+	{
         titulo: "Calendario de Reuniones octubre 2026",
         fecha: "8 de setiembre, 2026",
         contenido: "Calendario de Reuniones Plan EBI y EMS.",
