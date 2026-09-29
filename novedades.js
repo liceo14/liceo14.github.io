@@ -1,6 +1,15 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
 	{
+        titulo: "Tu nombre enSeña",
+        fecha: "29 de setiembre, 2026",
+        contenido: "¿Cómo se dice tu nombre en Lengua de Señas Uruguaya?",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_tc2uAC3OTvf5-ImEsFSzMMIBwYuZmknEwKNVAl51v0-OtWXYyh8PuZs&s=10",
+        enlace: "https://tunombre.mides.gub.uy/",
+		lsu: ""
+    },
+
+	{
         titulo: "Jornada recreativa 17 de setiembre de 2026",
         fecha: "15 de setiembre, 2026",
         contenido: "Organizada en dos turnos: Matutino y Vespertino.",
