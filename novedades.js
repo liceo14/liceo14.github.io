@@ -1,6 +1,19 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
 	{
+        titulo: "ANTEL Campus Party 2026",
+        fecha: "13 de octubre, 2026",
+        contenido: `Invitación evento internacional del mundo tecnológico y del gaming.
+		30 de octubre, 9:30hr: invitación para estudiantes con referente institucional.
+		
+		31 de octubre, 12:00hr: invitación para estudiantes, acompañados de un adulto (paga entrada).
+		
+		El Liceo debe enviar lista de interesados hasta el 23 de octubre.`,
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_pmhm8rjiO8IXQ9rLI1kqiqMmTWAyLdGv3TODBUGPLdykreJoGZLf5n5e&s=10",
+        enlace: "https://www.antelarena.com.uy/events/detail/antel-campus-party-2026",
+		lsu: ""
+    },
+	{
         titulo: "Tu nombre enSeña",
         fecha: "29 de setiembre, 2026",
         contenido: "¿Cómo se dice tu nombre en Lengua de Señas Uruguaya?",
