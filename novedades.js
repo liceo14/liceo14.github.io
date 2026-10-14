@@ -1,6 +1,16 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
 	{
+        titulo: "Hackatón de estudiantes",
+        fecha: "14 de octubre, 2026",
+        contenido: `Misión internetIA: pensar, crear y transformar es una iniciativa orientada a promover la ciudadanía digital y el pensamiento crítico en el uso responsable de la inteligencia artificial en la educación.
+		
+		La hackatón se realizará el día 26 de noviembre en el marco del Encuentro de Innovación Pedagógica de Ceibal en el Espacio Modelo de Montevideo.`,
+        imagen: "https://documentos.ceibal.edu.uy/portal/2026/09/Ceibal_-_Ciudadania_Digital_-_Hackaton_-_Web-1.png",
+        enlace: "https://ceibal.edu.uy/institucional/articulos/pensar-crear-y-transformar-con-ia/",
+		lsu: ""
+    },
+	{
         titulo: "ANTEL Campus Party 2026",
         fecha: "13 de octubre, 2026",
         contenido: `Invitación evento internacional del mundo tecnológico y del gaming.
