@@ -1,6 +1,13 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
     {
+        titulo: "Encuesta a estudiantes de 9no sobre las asignaturas optativas de 1°EMS",
+        fecha: "19 de octubre, 2026",
+        contenido: "",
+        imagen: "/images/QRencuesta.png",
+        enlace: "http://aulas.ces.edu.uy/enrol/index.php?id=2614"
+    },
+    {
         titulo: "Horarios Tutorías 2026",
         fecha: "3 de agosto, 2026",
         contenido: "",
