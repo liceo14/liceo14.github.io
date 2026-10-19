@@ -5,7 +5,7 @@ const NOVEDADES = [
         fecha: "19 de octubre, 2026",
         contenido: "",
         imagen: "/images/QRencuesta.png",
-        enlace: "http://aulas.ces.edu.uy/mod/questionnaire/view.php?"
+        enlace: "http://aulas.ces.edu.uy/mod/questionnaire/view.php?id=119741"
     },
     {
         titulo: "Horarios Tutorías 2026",
