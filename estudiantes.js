@@ -3,7 +3,12 @@ const NOVEDADES = [
     {
         titulo: "Encuesta a estudiantes de 9no sobre las asignaturas optativas de 1°EMS",
         fecha: "19 de octubre, 2026",
-        contenido: "",
+        contenido: `
+		<a href="https://drive.google.com/file/d/1yEbEqpcCzfnJa-UIqKFLLHh-aN-n7owe/view?usp=drive_link" target="_blank"> <span>Instructivo estudiantes.</span>
+        </a>
+		<a href="https://drive.google.com/file/d/1ZTkPo-nVGNHYo3bCBAiC6TP9YtQFb_Q1/view?usp=drive_link" target="_blank"> <span>Optativas 1EMS.</span>
+        </a>
+		`,
         imagen: "/images/QRencuesta.png",
         enlace: "http://aulas.ces.edu.uy/mod/questionnaire/view.php?id=119741"
     },
