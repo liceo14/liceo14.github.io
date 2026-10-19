@@ -6,6 +6,7 @@ const NOVEDADES = [
         contenido: `
 		<a href="https://drive.google.com/file/d/1yEbEqpcCzfnJa-UIqKFLLHh-aN-n7owe/view?usp=drive_link" target="_blank"> <span>Instructivo estudiantes.</span>
         </a>
+		<br>
 		<a href="https://drive.google.com/file/d/1ZTkPo-nVGNHYo3bCBAiC6TP9YtQFb_Q1/view?usp=drive_link" target="_blank"> <span>Optativas 1EMS.</span>
         </a>
 		`,
