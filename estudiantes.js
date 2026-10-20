@@ -1,6 +1,13 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
     {
+        titulo: "Relevanmiento de continuidad estudiantes de 9no",
+        fecha: "20 de octubre, 2026",
+        contenido: "Ingreso con credenciales de CREA. NO es una inscripción formal."
+        imagen: "",
+        enlace: "https://fins.anep.edu.uy"
+    },
+    {
         titulo: "Encuesta a estudiantes de 9no sobre las asignaturas optativas de 1°EMS",
         fecha: "19 de octubre, 2026",
         contenido: `
