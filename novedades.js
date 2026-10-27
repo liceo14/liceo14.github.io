@@ -26,9 +26,9 @@ const NOVEDADES = [
 	{
         titulo: "Tu nombre enSeña",
         fecha: "29 de setiembre, 2026",
-        contenido: "¿Cómo se dice tu nombre en Lengua de Señas Uruguaya?",
+        contenido: "¿Cómo se dice tu nombre en Lengua de Señas Uruguaya? La iniciativa culminó.",
         imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_tc2uAC3OTvf5-ImEsFSzMMIBwYuZmknEwKNVAl51v0-OtWXYyh8PuZs&s=10",
-        enlace: "https://tunombre.mides.gub.uy/",
+        enlace: "https://www.youtube.com/watch?v=-LtbMrktIQg",
 		lsu: ""
     },
 
