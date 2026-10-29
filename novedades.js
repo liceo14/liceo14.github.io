@@ -4,7 +4,7 @@ const NOVEDADES = [
 		titulo: "Calendario de Exámenes Diciembre 2026",
         fecha: "29 de octubre, 2026",
 		contenido: "Calendario de Exámenes y Acreditaciones Plan EBI / 2013 Diciembre de 2026.",
-		imagen: "https://drive.google.com/file/d/1w0HAmU4-8478aYoCf5poE8MpFd1Y4KTJ",
+		imagen: "https://lh3.googleusercontent.com/d/1w0HAmU4-8478aYoCf5poE8MpFd1Y4KTJ",
 		enlace: "novedades.html",
 		lsu: ""
 	},
@@ -12,7 +12,7 @@ const NOVEDADES = [
 		titulo: "Calendario de Reuniones Diciembre 2026",
         fecha: "29 de octubre, 2026",
 		contenido: "Calendario de Reuniones Plan EBI y EMS Diciembre de 2026.",
-		imagen: "https://drive.google.com/file/d/1VvFVK7W4GS29TE5aMll1AvUKUiTAzh-8",
+		imagen: "https://lh3.googleusercontent.com/d/1VvFVK7W4GS29TE5aMll1AvUKUiTAzh-8",
 		enlace: "novedades.html",
 		lsu: ""
 	},
