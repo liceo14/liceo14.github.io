@@ -1,6 +1,22 @@
 // novedades.js - Cartelera de novedades del Liceo 14
 const NOVEDADES = [
 	{
+		titulo: "Calendario de Exámenes Diciembre 2026",
+        fecha: "29 de octubre, 2026",
+		contenido: "Calendario de Exámenes y Acreditaciones Plan EBI / 2013 Diciembre de 2026.",
+		imagen: "https://drive.google.com/file/d/1w0HAmU4-8478aYoCf5poE8MpFd1Y4KTJ",
+		enlace: "novedades.html",
+		lsu: ""
+	},
+	{
+		titulo: "Calendario de Reuniones Diciembre 2026",
+        fecha: "29 de octubre, 2026",
+		contenido: "Calendario de Reuniones Plan EBI y EMS Diciembre de 2026.",
+		imagen: "https://drive.google.com/file/d/1VvFVK7W4GS29TE5aMll1AvUKUiTAzh-8",
+		enlace: "novedades.html",
+		lsu: ""
+	},
+	{
         titulo: "Hackatón de estudiantes",
         fecha: "14 de octubre, 2026",
         contenido: `Misión internetIA: pensar, crear y transformar es una iniciativa orientada a promover la ciudadanía digital y el pensamiento crítico en el uso responsable de la inteligencia artificial en la educación.
@@ -26,7 +42,7 @@ const NOVEDADES = [
 	{
         titulo: "Tu nombre enSeña",
         fecha: "29 de setiembre, 2026",
-        contenido: "¿Cómo se dice tu nombre en Lengua de Señas Uruguaya? La iniciativa culminó.",
+        contenido: "¿Cómo se dice tu nombre en Lengua de Señas Uruguaya? La iniciativa finalizó.",
         imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_tc2uAC3OTvf5-ImEsFSzMMIBwYuZmknEwKNVAl51v0-OtWXYyh8PuZs&s=10",
         enlace: "https://www.youtube.com/watch?v=-LtbMrktIQg",
 		lsu: ""
